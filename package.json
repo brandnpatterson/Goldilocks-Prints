@@ -19,8 +19,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-icons": "^2.2.3",
-    "react-router": "4.0.0-alpha.5",
-    "server": "^1.0.0-alpha.21"
+    "react-router": "4.0.0-alpha.5"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
