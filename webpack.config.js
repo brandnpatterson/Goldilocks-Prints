@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -9,9 +8,9 @@ module.exports = {
   },
   entry: './app/scripts/App.js',
   output: {
-    path: path.resolve(__dirname),
+    path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/public'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -37,25 +36,15 @@ module.exports = {
         loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
       },
       {
+        test: /\.scss$/,
+        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'url-loader'
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Goldilocks Prints',
-      minify: {
-        collapseWhitespace: true
-      },
-      hash: true,
-      inject: 'body',
-      template: './app/index.ejs',
-      output: {
-        publicPath: '/'
-      }
-    })
-  ],
   stats: {
     colors: true,
     reasons: true,

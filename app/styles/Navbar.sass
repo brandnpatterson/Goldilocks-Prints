@@ -1,0 +1,44 @@
+@import './basics/index'
+@import './Navbar/index'
+
+.navbar
+  background: $white
+  box-shadow: 3px 0 5px #888
+  height: 150px
+  margin-top: -21px
+  position: fixed
+  width: 100vw
+  overflow: hidden
+  z-index: 1
+  @include mediaQuery($iPhone)
+    width: 108%
+
+  a
+    color: $dark
+
+  ul
+    right: 40px
+    padding-top: 45px
+    position: fixed
+    z-index: 1
+
+  ul.slide
+    @include mediaQuery($iPhone)
+      display: none
+
+  li
+    padding: 0 20px 0 20px
+
+  .logo,
+  .logo-header
+    height: 100px
+    position: fixed
+    z-index: 1
+    @include mediaQuery($iPhone)
+      margin-left: -30px
+
+  .logo
+    padding: 25px 0 0 60px
+
+  .logo-header
+    padding: 25px 0 0 53.5px
