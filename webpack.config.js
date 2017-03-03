@@ -7,7 +7,7 @@ module.exports = {
     historyApiFallback: true,
     port: 8888
   },
-  entry: './app/js/App.js',
+  entry: './app/scripts/App.js',
   output: {
     path: path.resolve(__dirname),
     filename: 'bundle.js',
@@ -18,10 +18,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.sass$/,
-        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
-      },
       {
         test: /\.js$/,
         enforce: 'pre',
@@ -35,6 +31,14 @@ module.exports = {
         query: {
           presets: ['latest']
         }
+      },
+      {
+        test: /\.sass$/,
+        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'url-loader'
       }
     ]
   },
