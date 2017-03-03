@@ -6,9 +6,10 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --watch & gulp",
-    "serve": "webpack-dev-server --hot --inline --port 8888",
-    "start": "gulp clean && npm run build & npm run serve"
+    "dev": "webpack-dev-server --hot --inline --port 8888",
+    "prod": "webpack -p",
+    "build": "gulp",
+    "start": "gulp clean && npm run build & npm run dev"
   },
   "dependencies": {
     "axios": "^0.15.3",
