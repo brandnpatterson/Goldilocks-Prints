@@ -5,6 +5,8 @@ import { BrowserRouter, Link, Match } from 'react-router'
 import Home from './routes/Home'
 import About from './routes/About'
 
+import '../sass/app.sass'
+
 class App extends Component {
   render () {
     return (

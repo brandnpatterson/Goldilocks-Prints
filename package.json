@@ -6,10 +6,11 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf public/app.css & rimraf public/bundle.js & rimraf public/index.html",
     "dev": "webpack-dev-server --hot --inline --port 8888",
     "prod": "webpack -p",
     "build": "gulp",
-    "start": "gulp clean && npm run build & npm run dev"
+    "start": "npm run clean && npm run dev"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -26,6 +27,7 @@
     "babel-loader": "^6.3.2",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "css-loader": "^0.26.2",
     "del": "^2.2.2",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^7.0.0",
@@ -35,13 +37,18 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.1.1",
+    "extract-text-webpack-plugin": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.0.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
+    "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.0",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
