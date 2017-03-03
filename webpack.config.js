@@ -1,12 +1,16 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+// const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
 module.exports = {
   devtool: 'inline-sourcemap',
-  entry: './app/js/App.js',
+  devServer: {
+    historyApiFallback: true,
+    port: 8888
+  },
+  entry: './app/js/index.js',
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname),
     filename: 'bundle.js',
     publicPath: '/'
   },
@@ -17,11 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.sass$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader'],
-          publicPath: 'public'
-        })
+        use: ['css-loader', 'postcss-loader', 'sass-loader']
       },
       {
         test: /\.js$/,
@@ -51,10 +51,6 @@ module.exports = {
       output: {
         publicPath: '/'
       }
-    }),
-    new ExtractTextPlugin({
-      filename: 'app.css',
-      allChunks: true
     })
   ],
   stats: {
@@ -63,3 +59,9 @@ module.exports = {
     chunks: true
   }
 }
+
+// ,
+// new ExtractTextPlugin({
+//   filename: 'bundle.css',
+//   allChunks: true
+// })

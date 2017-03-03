@@ -12,7 +12,7 @@ gulp.task('default', ['styles'])
 //
 // gulp.task('clean:images', del.bind(null, ['public/images'], {read: false}))
 
-gulp.task('images', ['clean:images'], () => {
+gulp.task('images', () => {
   return gulp.src('app/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('public/images'))
