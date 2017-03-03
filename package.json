@@ -6,15 +6,19 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
-    "start": "gulp clean && gulp && webpack-dev-server --port 8888 && webpack --watch & gulp watch"
+    "build": "webpack --watch & gulp",
+    "serve": "webpack-dev-server --hot --inline --port 8888",
+    "start": "gulp clean && npm run build & npm run serve"
   },
   "dependencies": {
     "axios": "^0.15.3",
     "history": "^4.4.0",
+    "lodash": "^4.17.4",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-icons": "^2.2.3",
-    "react-router": "4.0.0-alpha.5"
+    "react-router": "4.0.0-alpha.5",
+    "server": "^1.0.0-alpha.21"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
@@ -32,12 +36,11 @@
     "eslint-plugin-standard": "^2.1.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-eslint": "^3.0.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.0.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.1",
     "node-sass": "^4.5.0",
-    "npm-run-all": "^4.0.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },

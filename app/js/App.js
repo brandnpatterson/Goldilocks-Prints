@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className='container'>
-          <div className='nav'>
+          <nav className='nav'>
             <Link to='/'>Home</Link> - <Link to='/about'>About</Link>
-          </div>
+          </nav>
           <Match exactly pattern='/' component={Home} />
           <Match exactly pattern='/about' component={About} />
         </div>

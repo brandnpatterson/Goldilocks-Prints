@@ -2,17 +2,16 @@ const path = require('path');
 
 module.exports = {
   devtool: 'inline-sourcemap',
-  devServer: {
-    port: 8888
-  },
   context: path.join(__dirname, './app'),
   entry: [
     './js/App.js',
   ],
   output: {
-    path: path.join(__dirname, '/public/js'),
-    publicPath: '/js',
+    path: path.join(__dirname, './public/js'),
     filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
   },
   module: {
     loaders: [
@@ -32,12 +31,9 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['.js', '.jsx', '.json']
-  },
   stats: {
     colors: true,
     reasons: true,
-    chunks: false
+    chunks: true
   }
 };
