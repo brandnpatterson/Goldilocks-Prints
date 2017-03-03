@@ -7,9 +7,10 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf bundle.css & rimraf bundle.js & rimraf index.html",
-    "dev": "webpack -d & webpack-dev-server --hot --inline",
+    "dev": "webpack -d --watch & webpack-dev-server --hot --inline",
     "prod": "webpack -p",
     "build": "gulp",
+    "server": "webpack -d --watch & nodemon server.js app -e sass, js",
     "start": "npm run clean && npm run dev"
   },
   "dependencies": {
@@ -25,7 +26,6 @@
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "css-loader": "^0.26.2",
-    "del": "^2.2.2",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^7.0.0",
     "eslint-config-standard-jsx": "^3.2.0",
@@ -34,7 +34,6 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.1.1",
-    "extract-text-webpack-plugin": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-htmlmin": "^3.0.0",

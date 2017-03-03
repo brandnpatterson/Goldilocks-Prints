@@ -1,0 +1,20 @@
+$desktop: '(min-width: 767px)'
+$iPad   : '(min-width: 500px) and (max-width: 767px)'
+$iPhone : '(max-width: 640px)'
+
+@media screen and #{$iPad}
+
+  .divider-text
+    font-size: 25px
+
+  .icon
+    right: 15%
+
+@media screen and #{$desktop}
+
+  .divider-text
+    font-size: 35px
+    padding: 60px 0 0 5%
+
+  .icon
+    right: 18%

@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
 
+import Section from './Home/Section'
+
+import '../styles/Home.sass'
+
 export default class Home extends Component {
   render () {
     return (
-      <div>
-        <h1>Home</h1>
+      <div className='home'>
+        <Section
+          className='section'
+          backgroundImage='url(../../images/landing.jpeg)'
+        />
       </div>
     )
   }

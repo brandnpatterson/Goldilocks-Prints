@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-// const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
     historyApiFallback: true,
     port: 8888
   },
-  entry: './app/js/index.js',
+  entry: './app/js/App.js',
   output: {
     path: path.resolve(__dirname),
     filename: 'bundle.js',
@@ -21,7 +20,7 @@ module.exports = {
     rules: [
       {
         test: /\.sass$/,
-        use: ['css-loader', 'postcss-loader', 'sass-loader']
+        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
       },
       {
         test: /\.js$/,
@@ -59,9 +58,3 @@ module.exports = {
     chunks: true
   }
 }
-
-// ,
-// new ExtractTextPlugin({
-//   filename: 'bundle.css',
-//   allChunks: true
-// })
