@@ -6,12 +6,7 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
-    "build": "webpack & gulp",
-    "clean": "rimraf public/*.js & rimraf public/*.js.map & rimraf public/*.css",
-    "dev": "webpack-dev-server --port 8888",
-    "lint": "eslint js/**/*.js server.js webpack.config.js",
-    "start": "npm-run-all -p build dev lint watch",
-    "watch": "webpack --watch"
+    "start": "gulp clean && gulp && webpack-dev-server --port 8888 && webpack --watch & gulp watch"
   },
   "dependencies": {
     "axios": "^0.15.3",
@@ -26,6 +21,7 @@
     "babel-loader": "^6.3.2",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "del": "^2.2.2",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^7.0.0",
     "eslint-config-standard-jsx": "^3.2.0",
@@ -42,7 +38,6 @@
     "gulp-sourcemaps": "^2.4.1",
     "node-sass": "^4.5.0",
     "npm-run-all": "^4.0.2",
-    "rimraf": "^2.6.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },

@@ -1,13 +1,36 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  context: path.join(__dirname, '/scripts'),
-  entry: './App.js',
-  devtool: 'cheap-module-source-map',
+  devtool: 'inline-sourcemap',
+  devServer: {
+    port: 8888
+  },
+  context: path.join(__dirname, './app'),
+  entry: [
+    './js/App.js',
+  ],
   output: {
-    path: path.join(__dirname, '/public'),
-    publicPath: '/public/',
+    path: path.join(__dirname, '/public/js'),
+    publicPath: '/js',
     filename: 'bundle.js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['latest']
+        }
+      }
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -16,22 +39,5 @@ module.exports = {
     colors: true,
     reasons: true,
     chunks: false
-  },
-  module: {
-    rules: [
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
-      {
-        test: /\.js?$/,
-        loader: 'babel-loader',
-        include: [
-          path.resolve('scripts')
-        ]
-      }
-    ]
   }
-}
+};
