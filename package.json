@@ -1,57 +1,44 @@
 {
-  "name": "React-Webpack",
-  "version": "1.0.0",
-  "description": "React-Webpack",
-  "main": "index.js",
-  "author": "Brandon Patterson",
-  "license": "MIT",
+  "name": "Goldilocks-Prints",
+  "version": "1.0.2",
   "scripts": {
-    "clean": "rimraf public/bundle.js",
-    "dev": "webpack -d --watch & webpack-dev-server --hot --inline",
-    "prod": "webpack -p",
-    "start": "npm run clean && npm run dev"
+    "start": "gulp clean && gulp scripts && gulp"
   },
+  "author": "Brandon Patterson",
+  "description": "Goldilocks-Prints",
+  "main": "index.html",
+  "url": "",
+  "homepage": "",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.15.3",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-icons": "^2.2.3",
-    "react-router": "2.6.1"
+    "jquery": "^3.1.1",
+    "mustache": "^2.3.0"
   },
   "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.3.2",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "css-loader": "^0.26.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-latest": "^6.16.0",
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
     "eslint": "^3.16.1",
-    "eslint-config-standard": "^7.0.0",
-    "eslint-config-standard-jsx": "^3.2.0",
-    "eslint-config-standard-react": "^4.2.0",
-    "eslint-loader": "^1.6.3",
-    "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-react": "^6.10.0",
-    "eslint-plugin-standard": "^2.1.1",
-    "file-loader": "^0.10.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
     "node-sass": "^4.5.0",
-    "node-sass-globbing": "^0.0.23",
-    "postcss-loader": "^1.3.3",
-    "rimraf": "^2.6.1",
-    "sass-loader": "^6.0.2",
-    "style-loader": "^0.13.2",
-    "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.1"
-  },
-  "directories": {
-    "test": "test"
+    "webpack-dev-middleware": "^1.10.1",
+    "webpack-stream": "^3.2.0"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/brandnpatterson/Goldilocks-Prints.git"
   },
   "bugs": {
-    "url": ""
-  },
-  "homepage": ""
+    "url": "https://github.com/brandnpatterson/Goldilocks-Prints/issues"
+  }
 }

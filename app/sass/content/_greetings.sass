@@ -1,0 +1,25 @@
+//    fade-in / fade-out    //
+
+@keyframes fade-out
+	0%
+		opacity: 0.5
+	100%
+		opacity: 0
+
+@keyframes slide-in
+	0%
+		top: 250px
+		left: 20px
+	100%
+		top: 330px
+		left: 20px
+
+.greetings
+  text-align: center
+
+  h1
+    animation: slide-in 2s
+    animation-fill-mode: forwards
+    backface-visibility: hidden
+    perspective: 1000
+    position: absolute

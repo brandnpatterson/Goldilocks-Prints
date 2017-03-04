@@ -1,9 +1,2 @@
-.DS_Store
-.eslintcache
-.nyc_output
-.sass-cache/
-*.map
-*.bundle.js
-_site/
-node_modules/
+node_modules
 npm-debug.log

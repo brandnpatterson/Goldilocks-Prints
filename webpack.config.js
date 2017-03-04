@@ -1,28 +1,21 @@
-const path = require('path')
+var path = require('path');
 
 module.exports = {
   devtool: 'inline-sourcemap',
   devServer: {
-    historyApiFallback: true,
-    port: 8888
+    port: 8888,
+    stats: 'errors only'
   },
-  entry: './app/scripts/App.js',
+  context: path.join(__dirname, './app'),
+  entry: [
+    './js/index.js',
+  ],
   output: {
-    path: path.resolve(__dirname, './public'),
+    path: path.resolve(__dirname, './dist/js'),
     filename: 'bundle.js',
-    publicPath: '/public'
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.json']
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        enforce: 'pre',
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
+    loaders: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
@@ -30,24 +23,7 @@ module.exports = {
         query: {
           presets: ['latest']
         }
-      },
-      {
-        test: /\.sass$/,
-        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
-      },
-      {
-        test: /\.scss$/,
-        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
-      },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loader: 'url-loader'
       }
     ]
-  },
-  stats: {
-    colors: true,
-    reasons: true,
-    chunks: true
   }
-}
+};

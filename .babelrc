@@ -1,14 +1,5 @@
 {
   "presets": [
-    "react",
-    ["latest", {"modules": false, "loose": true}]
-  ],
-  "env": {
-    "server": {
-      "plugins": ["transform-es2015-modules-commonjs"]
-    },
-    "test": {
-      "plugins": ["transform-es2015-modules-commonjs"]
-    }
-  }
+    ["latest", { "modules": false }]
+  ]
 }
