@@ -45,9 +45,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-
-  ],
   stats: {
     colors: true,
     reasons: true,

@@ -14,11 +14,11 @@ export default class Header extends React.Component {
       transform: false,
       logo: logoHeader
     }
+    this.onDropdownSelect = this.onDropdownSelect.bind(this)
     this.onNavSelect = this.onNavSelect.bind(this)
-    this.onNavSelectDropdown = this.onNavSelectDropdown.bind(this)
   }
 
-  onNavSelect () {
+  onDropdownSelect () {
     if (this.state.transform === false) {
       this.setState({
         transform: true,
@@ -32,7 +32,7 @@ export default class Header extends React.Component {
     }
   }
 
-  onNavSelectDropdown () {
+  onNavSelect () {
     if (this.state.transform === true) {
       this.setState({
         transform: false
@@ -51,12 +51,12 @@ export default class Header extends React.Component {
         <div className='header-background' />
         <div className='header-content'>
           <div
-            className='drop-btn'
-            onClick={this.onNavSelectDropdown}
+            onClick={this.onDropdownSelect}
+            className={'drop-btn ' + (this.state.transform ? 'drop-btn-transform' : '')}
           >
-            <div className={'bar1 ' + (this.state.transform ? 'transform-bar1' : '')} />
-            <div className={'bar2 ' + (this.state.transform ? 'transform-bar2' : '')} />
-            <div className={'bar3 ' + (this.state.transform ? 'transform-bar3' : '')} />
+            <div className='bar1' />
+            <div className='bar2' />
+            <div className='bar3' />
           </div>
           <img
             src={this.state.logo}
@@ -65,7 +65,7 @@ export default class Header extends React.Component {
           />
           <ul
             className={'nav-links' + (this.state.transform ? '-visible' : '')}
-            onClick={this.onNavSelectDropdown}
+            onClick={this.onNavSelect}
           >
             <Routes />
           </ul>

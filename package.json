@@ -6,10 +6,11 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
+    "build": "webpack -d -w",
     "clean": "rimraf public/bundle.js",
-    "dev": "webpack-dev-server --hot --inline && webpack -d --watch",
+    "dev": "webpack-dev-server --hot --inline",
     "prod": "webpack -p",
-    "start": "npm run clean && npm run dev"
+    "start": "npm run clean && npm run dev && npm run build"
   },
   "dependencies": {
     "axios": "^0.15.3",
