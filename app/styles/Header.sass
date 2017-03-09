@@ -1,0 +1,91 @@
+@import './basics/index'
+@import './Header/index'
+
+.header
+  width: 80%
+
+  li
+    a
+      color: $dark
+
+  .header-background
+    background: $white
+    box-shadow: 3px 0 5px #888
+    height: 150px
+    position: fixed
+    width: 100vw
+    z-index: 1
+
+  .nav-links
+    div
+      @include mediaQuery($iPhone)
+        display: none
+
+      li
+        &:nth-child(5)
+          position: fixed
+          background-color: $gold
+          border: 2px solid black
+          border-radius: 10px
+          margin: 2%
+          padding: 20px
+          bottom: 20px
+          right: 20px
+
+  // nav-links changes to nav-links-visible when drop-btn is clicked
+  .nav-links-visible
+    div
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      margin: 120px 0 0 30px
+      padding: 0
+      z-index: 2
+
+      li
+        border: 2px solid black
+        border-radius: 10px
+        margin: 1%
+        flex: 1 1 20%
+        text-align: center
+
+        a
+          display: block
+          padding: 35px 0
+
+          &:hover
+            opacity: 0.5
+
+      &:first-child
+        margin-right: 20px
+
+
+  .logo
+    height: 100px
+    padding-top: 40px
+    padding-left: 33.5px
+    position: fixed
+    z-index: 1
+    @include mediaQuery($iPhone)
+      margin-left: -30px
+
+  ul
+    right: 40px
+    padding-top: 45px
+    position: fixed
+    z-index: 1
+
+  li
+    padding: 0 20px 0 20px
+
+#practice li
+    position: relative
+
+/* Starting State of Animation */
+.fade-enter
+    right: 100px
+
+/* End State of Animation */
+.fade-enter-active
+    right: 0px
+    transition: .5s ease-in all
