@@ -52,7 +52,7 @@ export default class Header extends React.Component {
         <div className='header-content'>
           <div
             className='drop-btn'
-            onClick={this.onNavSelect}
+            onClick={this.onNavSelectDropdown}
           >
             <div className={'bar1 ' + (this.state.transform ? 'transform-bar1' : '')} />
             <div className={'bar2 ' + (this.state.transform ? 'transform-bar2' : '')} />
