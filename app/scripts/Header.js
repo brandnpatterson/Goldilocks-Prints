@@ -14,11 +14,11 @@ export default class Header extends React.Component {
       transform: false,
       logo: logoHeader
     }
-    this.onDropdownSelect = this.onDropdownSelect.bind(this)
+    this.onDropBtnSelect = this.onDropBtnSelect.bind(this)
     this.onNavSelect = this.onNavSelect.bind(this)
   }
 
-  onDropdownSelect () {
+  onDropBtnSelect () {
     if (this.state.transform === false) {
       this.setState({
         transform: true,
@@ -51,7 +51,7 @@ export default class Header extends React.Component {
         <div className='header-background' />
         <div className='header-content'>
           <div
-            onClick={this.onDropdownSelect}
+            onClick={this.onDropBtnSelect}
             className={'drop-btn ' + (this.state.transform ? 'drop-btn-transform' : '')}
           >
             <div className='bar1' />
