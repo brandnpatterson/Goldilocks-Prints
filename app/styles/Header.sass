@@ -17,6 +17,8 @@
     z-index: 1
 
   .nav-links
+    transition: all 0.6s ease-in
+    
     div
       @include mediaQuery($iPhone)
         display: none
@@ -34,12 +36,13 @@
 
   // nav-links changes to nav-links-visible when drop-btn is clicked
   .nav-links-visible
+    margin: 200px 0 0 50px
+    padding: 0 !important
+
     div
       display: flex
       flex-direction: row
       flex-wrap: wrap
-      margin: 120px 0 0 30px
-      padding: 0
       z-index: 2
 
       li
@@ -56,13 +59,9 @@
           &:hover
             opacity: 0.5
 
-      &:first-child
-        margin-right: 20px
-
 
   .logo
     height: 100px
-    padding-top: 40px
     padding-left: 33.5px
     position: fixed
     z-index: 1
@@ -71,7 +70,6 @@
 
   ul
     right: 40px
-    padding-top: 45px
     position: fixed
     z-index: 1
 
