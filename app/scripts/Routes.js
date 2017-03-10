@@ -15,7 +15,7 @@ export default class Routes extends Component {
   }
 
   handleScroll () {
-    if (document.body.scrollTop > 1) {
+    if (document.body.scrollTop > 400) {
       this.setState({
         scrolled: true
       })
