@@ -9,7 +9,7 @@ export default class Routes extends Component {
   constructor () {
     super()
     this.state = {
-      transform: false
+      scrolled: false
     }
     this.handleScroll = this.handleScroll.bind(this)
   }
@@ -17,11 +17,11 @@ export default class Routes extends Component {
   handleScroll () {
     if (document.body.scrollTop > 1) {
       this.setState({
-        transform: true
+        scrolled: true
       })
     } else {
       this.setState({
-        transform: false
+        scrolled: false
       })
     }
   }
@@ -38,7 +38,7 @@ export default class Routes extends Component {
         <li><Link to='#0'>GALLERY</Link></li>
         <li><Link to='#0'>CONTACT</Link></li>
         <li
-          className={(this.state.transform ? 'shop-now-slide' : '')}
+          className={(this.state.scrolled ? 'shop-now-slide' : '')}
           style={{...styles}}
         ><Link to='#0'>SHOP NOW</Link></li>
       </ul>

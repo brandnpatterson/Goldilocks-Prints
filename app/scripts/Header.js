@@ -15,7 +15,7 @@ export default class Header extends React.Component {
   constructor () {
     super()
     this.state = {
-      transform: false,
+      scrolled: false,
       height: 200,
       top: 40,
       logo: logoHeader,
@@ -29,21 +29,21 @@ export default class Header extends React.Component {
   }
 
   onDropBtnSelect () {
-    if (this.state.transform === false) {
+    if (this.state.scrolled === false) {
       this.setState({
-        transform: true
+        scrolled: true
       })
-    } else if (this.state.transform === true) {
+    } else if (this.state.scrolled === true) {
       this.setState({
-        transform: false
+        scrolled: false
       })
     }
   }
 
   onNavSelect () {
-    if (this.state.transform === true) {
+    if (this.state.scrolled === true) {
       this.setState({
-        transform: false
+        scrolled: false
       })
     }
   }
@@ -86,7 +86,7 @@ export default class Header extends React.Component {
           }}
         />
         <div
-          className={'drop-btn ' + (this.state.transform ? 'drop-btn-transform' : '')}
+          className={'drop-btn ' + (this.state.scrolled ? 'drop-btn-scrolled' : '')}
           style={{
             ...styles,
             paddingTop: this.state.paddingTop
@@ -102,13 +102,13 @@ export default class Header extends React.Component {
           style={{
             ...styles,
             top: this.state.top,
-            transform: 'scale(' + this.state.scale + ')'
+            scrolled: 'scale(' + this.state.scale + ')'
           }}
           src={this.state.logo}
           alt='Goldilocks Bear'
         />
         <div
-          className={'nav-links' + (this.state.transform ? '-visible' : '')}
+          className={'nav-links' + (this.state.scrolled ? '-visible' : '')}
           style={{
             paddingTop: this.state.paddingTop
           }}
