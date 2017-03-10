@@ -1,10 +1,12 @@
-.home
-  width: 100px
-  height: 100px
-  background-color: red
-  transition: 0.5s
-  opacity: 0
-  visibility: hidden
-  &.show
-    opacity: 1
-    visibility: visible
+@import './basics/index'
+
+.home,
+.about
+  background: $white
+  height: 300px
+  margin-top: 900px
+  width: 100vw
+
+  .panel
+    padding: 50px
+    text-align: center

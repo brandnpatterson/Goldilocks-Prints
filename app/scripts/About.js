@@ -4,23 +4,9 @@ export default class About extends Component {
   render () {
     return (
       <div className='about'>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <h1>About</h1>
+        <div className='panel'>
+          <h1>About</h1>
+        </div>
       </div>
     )
   }
