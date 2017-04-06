@@ -9,7 +9,7 @@
     "clean": "rimraf public/bundle.js",
     "deploy": "npm run prod && surge",
     "dev": "webpack-dev-server --hot --inline",
-    "prod": "webpack -p && surge",
+    "prod": "webpack -p && surge && git push",
     "start": "npm run clean && npm run dev",
     "test": "jest"
   },

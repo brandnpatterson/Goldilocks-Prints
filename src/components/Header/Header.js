@@ -13,7 +13,7 @@ export default class Header extends React.Component {
       height: 200,
       top: 40,
       logo: logoHeader,
-      opacity: 0,
+      opacity: 0.75,
       paddingTop: 45,
       scale: 1
     }
@@ -33,7 +33,7 @@ export default class Header extends React.Component {
       this.setState({
         height: 200,
         logo: logoHeader,
-        opacity: 0,
+        opacity: 0.75,
         paddingTop: 45,
         top: 40,
         scale: 1
