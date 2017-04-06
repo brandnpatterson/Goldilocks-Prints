@@ -6,6 +6,7 @@
 √ show nav dropdown menu
 √ Create onscroll listener fro navbar
 √ Refactor Navbar - drop-btn and nav in one component & include it into header
+√ Got background for mobile working perfectly
 
 # Current
 - Create Background for nav-links-responsive

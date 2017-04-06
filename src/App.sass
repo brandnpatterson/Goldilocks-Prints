@@ -1,19 +1,24 @@
 @import ./index.sass
 
-body
+a
+  text-decoration: none
+li
+  display: inline-block
+
+.background
   background: url('../public/images/landing.jpeg') no-repeat center center fixed
   background-size: cover
-  height: 100vh
-  margin: 0
-  a
-    text-decoration: none
-  li
-    display: inline-block
-
-.panel
-  background: $white
-  height: 300px
-  margin: 20px 0
-  padding: 50px 0
-  text-align: center
-  width: 100vw
+  width: 100%auto
+  height: 100%auto
+  position: absolute
+  z-index: -10
+  +mediaQuery($smallest)
+    background-attachment: scroll
+//     
+// .panel
+//   background: $white
+//   height: 300px
+//   margin: 20px 0
+//   padding: 50px 0
+//   text-align: center
+//   width: 100vw

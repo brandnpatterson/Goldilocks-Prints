@@ -7,9 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf public/bundle.js",
-    "deploy": "npm run prod && surge",
+    "deploy": "webpack -p && surge",
     "dev": "webpack-dev-server --hot --inline",
-    "prod": "webpack -p && surge",
     "start": "npm run clean && npm run dev",
     "test": "jest"
   },
