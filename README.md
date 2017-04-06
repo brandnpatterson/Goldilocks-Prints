@@ -9,10 +9,8 @@
 √ Got background for mobile working perfectly
 
 # Current
-- Create Background for nav-links-responsive
+- center Contact Me text
 - Consider most simple solution the best
 
 # Todo
-- Fix footer
-- Fix navbar on mobile
-- Populate content
+- Consider libraries to install (Unslider, Instafeed)
