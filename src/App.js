@@ -7,13 +7,15 @@ import './App.sass'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <Header />
-        <Routes />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className='landing'>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Routes />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   )
 }
 

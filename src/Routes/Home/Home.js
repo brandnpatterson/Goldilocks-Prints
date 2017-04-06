@@ -4,7 +4,7 @@ import './Home.sass'
 const Home = () => {
   return (
     <div className='home'>
-      <div className='panel clear'>
+      <div className='landing'>
         <h2>GOLDILOX PRINTS</h2>
       </div>
       <div className='panel'>
