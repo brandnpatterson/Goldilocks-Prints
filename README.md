@@ -1,12 +1,12 @@
 # Goldilocks Prints
 
 # Done
-√  Navbar animation
-√ drop-btn animation
-√ show nav dropdown menu
-√ Create onscroll listener fro navbar
-√ Refactor Navbar - drop-btn and nav in one component & include it into header
-√ Got background for mobile working perfectly 
+√  Navbar animation <br />
+√ drop-btn animation <br />
+√ show nav dropdown menu <br />
+√ Create onscroll listener fro navbar <br />
+√ Refactor Navbar - drop-btn and nav in one component & include it into header <br />
+√ Got background for mobile working perfectly <br />
 
 # Current
 - center Contact Me text
