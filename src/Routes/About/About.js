@@ -1,10 +1,9 @@
 import React from 'react'
 import './About.sass'
 
-const { string } = React.PropTypes
-
 class About extends React.Component {
   render () {
+    console.log(this.props)
     return (
       <div className='about'>
         <div className='panel'>
@@ -15,7 +14,4 @@ class About extends React.Component {
   }
 }
 
-About.propTypes = {
-  text: string
-}
 export default About

@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-// import Routes from '../Routes/Routes'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import Routes from './Routes/Routes'
 import './App.sass'
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <div>
         <Header />
-        {/* <Routes /> */}
+        <Routes />
         <Footer />
       </div>
     </BrowserRouter>

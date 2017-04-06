@@ -1,12 +1,9 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../Nav/Nav'
 import './Header.sass'
 
 const logoHeader = 'public/images/goldilocksheader.gif'
 const logoBear = 'public/images/goldilocksbear.gif'
-const styles = {
-  transition: 'all 0.3s'
-}
 
 export default class Header extends React.Component {
   constructor () {
@@ -51,7 +48,6 @@ export default class Header extends React.Component {
       <div className='header'>
         <div className='header-background'
           style={{
-            ...styles,
             height: this.state.height,
             opacity: this.state.opacity
           }}
@@ -59,16 +55,14 @@ export default class Header extends React.Component {
         <img
           className='logo'
           style={{
-            ...styles,
             top: this.state.top,
             transform: 'scale(' + this.state.scale + ')'
           }}
           src={this.state.logo}
           alt='Goldilocks Bear'
         />
-        <div
+        <div className='navigation'
           style={{
-            ...styles,
             paddingTop: this.state.paddingTop
           }}>
           <Navigation />

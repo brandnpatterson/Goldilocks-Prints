@@ -6,7 +6,7 @@ module.exports = {
     historyApiFallback: true,
     port: 8888
   },
-  entry: './app/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
