@@ -1,8 +1,24 @@
-body
+@import ./index.sass
+
+html
+
+  body
   background: url('../public/images/landing.jpeg') no-repeat center center fixed
   background-size: cover
+  height: 100vh
   margin: 0
   a
     text-decoration: none
   li
     display: inline-block
+
+.panel
+  background: $white
+  height: 300px
+  margin: 20px 0
+  padding: 50px 0
+  text-align: center
+  width: 100vw
+.panel.clear
+  background: none
+  color: $white

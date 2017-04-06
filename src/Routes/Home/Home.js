@@ -4,8 +4,11 @@ import './Home.sass'
 const Home = () => {
   return (
     <div className='home'>
+      <div className='panel clear'>
+        <h2>GOLDILOX PRINTS</h2>
+      </div>
       <div className='panel'>
-        <h1>Home</h1>
+        <h2>Home</h2>
       </div>
     </div>
   )
