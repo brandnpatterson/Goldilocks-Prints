@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render the Links component as expected 1`] = `
+<ul>
+  <li>
+    <Link
+      activeClassName=""
+      activeOnlyWhenExact={false}
+      activeStyle={Object {}}
+      className=""
+      isActive={[Function]}
+      replace={false}
+      style={Object {}}
+      to="/"
+    >
+      HOME
+    </Link>
+  </li>
+  <li>
+    <Link
+      activeClassName=""
+      activeOnlyWhenExact={false}
+      activeStyle={Object {}}
+      className=""
+      isActive={[Function]}
+      replace={false}
+      style={Object {}}
+      to="about"
+    >
+      ABOUT
+    </Link>
+  </li>
+  <li>
+    <Link
+      activeClassName=""
+      activeOnlyWhenExact={false}
+      activeStyle={Object {}}
+      className=""
+      isActive={[Function]}
+      replace={false}
+      style={Object {}}
+      to="#0"
+    >
+      GALLERY
+    </Link>
+  </li>
+  <li>
+    <Link
+      activeClassName=""
+      activeOnlyWhenExact={false}
+      activeStyle={Object {}}
+      className=""
+      isActive={[Function]}
+      replace={false}
+      style={Object {}}
+      to="#0"
+    >
+      CONTACT
+    </Link>
+  </li>
+  <li
+    className=""
+    style={
+      Object {
+        "transition": "all 0.45s ease-in",
+      }
+    }
+  >
+    <Link
+      activeClassName=""
+      activeOnlyWhenExact={false}
+      activeStyle={Object {}}
+      className=""
+      isActive={[Function]}
+      replace={false}
+      style={Object {}}
+      to="#0"
+    >
+      SHOP NOW
+    </Link>
+  </li>
+</ul>
+`;

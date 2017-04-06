@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render the Home component as expected 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="panel"
+  >
+    <h1>
+      Home
+    </h1>
+  </div>
+</div>
+`;

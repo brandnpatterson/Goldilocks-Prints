@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render the Header component as expected 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="header-background"
+    style={
+      Object {
+        "height": 200,
+        "opacity": 0,
+      }
+    }
+  />
+  <img
+    alt="Goldilocks Bear"
+    className="logo"
+    src="public/images/goldilocksheader.gif"
+    style={
+      Object {
+        "top": 40,
+        "transform": "scale(1)",
+      }
+    }
+  />
+  <div
+    className="nav"
+    style={
+      Object {
+        "paddingTop": 45,
+      }
+    }
+  >
+    <DropBtn />
+  </div>
+</div>
+`;

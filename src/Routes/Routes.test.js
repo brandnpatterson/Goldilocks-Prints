@@ -2,9 +2,9 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { MemoryRouter } from 'react-router'
 
-import About from '../About/About'
-import Home from '../Home/Home'
-import NotFound from '../NotFound/NotFound'
+import About from './About/About'
+import Home from './Home/Home'
+import NotFound from './NotFound/NotFound'
 import Routes from './Routes'
 
 test('It should render the Home component when visiting /', () => {
