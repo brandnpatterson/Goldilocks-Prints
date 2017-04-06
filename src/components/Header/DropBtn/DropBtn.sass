@@ -1,5 +1,5 @@
 @import ../../../index.sass
-
+/* drop-btn */
 .drop-btn
   cursor: pointer
   display: none
@@ -10,7 +10,7 @@
   z-index: 2
   div
     width: 35px
-    background-color: $dark
+    background: $dark
     border-radius: 25px
     height: 5px
     margin: 6px 0
@@ -28,7 +28,7 @@
     opacity: 0
   .bar3
     transform: rotate(45deg) translate(-9px, -6px)
-// nav links
+/* nav links */
 .nav-links
   transition: all 0.6s ease-in
   ul
@@ -37,9 +37,8 @@
     li
       &:nth-child(5)
         position: fixed
-        background-color: $gold
+        background: $gold
         border: 2px solid black
-        border-radius: 10px
         margin: 2%
         right: -160px
         padding: 20px
@@ -54,17 +53,21 @@
         right: -160px
       100%
         right: 30px
+/* nav-links-responsive */
 .nav-links-responsive
-  padding: 0
+  background: $modal
+  height: 100vh
+  position: fixed
+  top: 0
+  width: 100vw
   ul
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    margin-top: 100px
+    margin-top: 150px
     z-index: 2
     li
       border: 2px solid black
-      border-radius: 10px
       margin: 1%
       flex: 1 1 20%
       text-align: center

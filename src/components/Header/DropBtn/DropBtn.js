@@ -40,10 +40,8 @@ export default class DropBtn extends Component {
           <div className='bar2' />
           <div className='bar3' />
         </div>
-        <div
-          className={'nav-links' + (this.state.transform ? '-responsive' : '')}
-          onClick={this.onNavSelect}
-        >
+        <div className={'nav-links' + (this.state.transform ? '-responsive' : '')}
+          onClick={this.onNavSelect}>
           <Links />
         </div>
       </div>

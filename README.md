@@ -8,7 +8,7 @@
 √ Refactor Navbar - drop-btn and nav in one component & include it into header
 
 # Current
-- Separate Content from Header completely
+- Create Background for nav-links-responsive
 - Consider most simple solution the best
 
 # Todo
