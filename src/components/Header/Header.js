@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from '../Nav/Nav'
+import Nav from './DropBtn/DropBtn'
 import './Header.sass'
 
 const logoHeader = 'public/images/goldilocksheader.gif'
@@ -61,11 +61,11 @@ export default class Header extends React.Component {
           src={this.state.logo}
           alt='Goldilocks Bear'
         />
-        <div className='navigation'
+        <div className='nav'
           style={{
             paddingTop: this.state.paddingTop
           }}>
-          <Navigation />
+          <Nav />
         </div>
       </div>
     )

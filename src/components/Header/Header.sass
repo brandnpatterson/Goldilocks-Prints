@@ -12,54 +12,8 @@
     transition: all 0.3s
     width: 100vw
     z-index: 1
-  .routes-container
-    margin-top: 250px
-  .navigation
+  .nav
     transition: all 0.3s
-  .nav-links
-    transition: all 0.6s ease-in
-    ul
-      +mediaQuery($small)
-        display: none
-      li
-        &:nth-child(5)
-          position: fixed
-          background-color: $gold
-          border: 2px solid black
-          border-radius: 10px
-          margin: 2%
-          right: -160px
-          padding: 20px
-          bottom: 20px
-      .shop-now-slide
-        animation: shop-now-slide 1s
-        animation-fill-mode: forwards
-        backface-visibility: hidden
-        perspective: 1000
-      @keyframes shop-now-slide
-        0%
-          right: -160px
-        100%
-          right: 30px
-  .nav-links-responsive
-    padding: 0
-    ul
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      margin-top: 100px
-      z-index: 2
-      li
-        border: 2px solid black
-        border-radius: 10px
-        margin: 1%
-        flex: 1 1 20%
-        text-align: center
-        a
-          display: block
-          padding: 35px 0
-          &:hover
-            opacity: 0.5
   .logo
     height: 100px
     padding-left: 33.5px
@@ -74,73 +28,3 @@
     z-index: 1
   li
     padding: 0 20px 0 20px
-  .slide-enter
-    height: 200px
-    opacity: 1
-  .slide-enter-active
-    height: 70px
-    opacity: 0
-    transition: opacity 300ms
-  .slide-leave
-    height: 70px
-    opacity: 0
-  .slide-leave-active
-    height: 200px
-    opacity: 1
-    transition: opacity 300ms
-
-// shrink-navbar
-@keyframes shrink-navbar
-  0%
-    height: 150px
-  100%
-    height: 85px
-
-.shrink-navbar
-  animation: shrink-navbar 0.5s
-  animation-fill-mode: forwards
-  backface-visibility: hidden
-  perspective: 1000
-
-// grow-navbar
-@keyframes grow-navbar
-  0%
-    height: 85px
-  100%
-    height: 150px
-
-.grow-navbar
-  animation: grow-navbar 0.5s
-  animation-fill-mode: forwards
-  backface-visibility: hidden
-  perspective: 1000
-
-// shrink slide
-@keyframes shrink-slide
-  0%
-    height: 100px
-    padding-top: 40px
-  100%
-    height: 60px
-    padding-top: 16px
-
-.shrink-slide
-  animation: shrink-slide 0.5s
-  animation-fill-mode: forwards
-  backface-visibility: hidden
-  perspective: 1000
-
-// grow-slide
-@keyframes grow-slide
-  0%
-    height: 60px
-    padding-top: 16px
-  100%
-    height: 100px
-    padding-top: 40px
-
-.grow-slide
-  animation: grow-slide 0.5s
-  animation-fill-mode: forwards
-  backface-visibility: hidden
-  perspective: 1000

@@ -7,11 +7,13 @@ const Footer = () => {
   return (
     <footer>
       <Links />
-      <a className='copyright' href='http://brandnpatterson.github.io/' target='_blank'>
-        <p>
-        &copy; {copyright} Brandon Patterson. All Rights Reserved.
-        </p>
-      </a>
+      <div className='copyright'>
+        <a href='http://brandnpatterson.github.io/' target='_blank'>
+          <p>
+          &copy; {copyright} Brandon Patterson. All Rights Reserved.
+          </p>
+        </a>
+      </div>
     </footer>
   )
 }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Links from '../Links/Links'
-import './nav.sass'
+import Links from '../../Links/Links'
+import './DropBtn.sass'
 
-export default class Nav extends Component {
+export default class DropBtn extends Component {
   constructor () {
     super()
     this.state = {
@@ -22,7 +22,6 @@ export default class Nav extends Component {
       })
     }
   }
-
   onNavSelect () {
     if (this.state.transform === true) {
       this.setState({
@@ -32,7 +31,7 @@ export default class Nav extends Component {
   }
   render () {
     return (
-      <div className='navigation'>
+      <div>
         <div
           className={'drop-btn ' + (this.state.transform ? 'transform' : '')}
           onClick={this.onDropBtnSelect}
