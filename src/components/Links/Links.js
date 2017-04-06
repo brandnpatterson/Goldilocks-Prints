@@ -35,8 +35,8 @@ export default class Links extends Component {
       <ul>
         <li><Link to='/'>HOME</Link></li>
         <li><Link to='about'>ABOUT</Link></li>
-        <li><Link to='#0'>GALLERY</Link></li>
-        <li><Link to='#0'>CONTACT</Link></li>
+        <li><Link to='contact'>CONTACT</Link></li>
+        <li><Link to='gallery'>GALLERY</Link></li>
         <li
           className={(this.state.scrolled ? 'shop-now-slide' : '')}
           style={{...styles}}

@@ -5,15 +5,19 @@ import './Header.sass'
 const logoHeader = 'public/images/goldilocksheader.gif'
 const logoBear = 'public/images/goldilocksbear.gif'
 
+const styles = {
+  transition: 'all 0.5s'
+}
+
 export default class Header extends React.Component {
   constructor () {
     super()
     this.state = {
       transform: false,
-      height: 200,
-      top: 40,
+      height: 150,
+      top: 25,
       logo: logoHeader,
-      opacity: 0.75,
+      opacity: 0.35,
       paddingTop: 45,
       scale: 1
     }
@@ -31,11 +35,11 @@ export default class Header extends React.Component {
       })
     } else {
       this.setState({
-        height: 200,
+        height: 150,
         logo: logoHeader,
-        opacity: 0.75,
+        opacity: 0.35,
         paddingTop: 45,
-        top: 40,
+        top: 25,
         scale: 1
       })
     }
@@ -48,6 +52,7 @@ export default class Header extends React.Component {
       <div className='header'>
         <div className='header-background'
           style={{
+            ...styles,
             height: this.state.height,
             opacity: this.state.opacity
           }}
@@ -55,6 +60,7 @@ export default class Header extends React.Component {
         <img
           className='logo'
           style={{
+            ...styles,
             top: this.state.top,
             transform: 'scale(' + this.state.scale + ')'
           }}
@@ -63,6 +69,7 @@ export default class Header extends React.Component {
         />
         <div className='nav'
           style={{
+            ...styles,
             paddingTop: this.state.paddingTop
           }}>
           <Nav />

@@ -6,7 +6,5 @@ import '../public/normalize.css'
 const app = document.getElementById('app')
 
 render(
-  <div className='background'>
-    <App />
-  </div>
+  <App />
 , app)

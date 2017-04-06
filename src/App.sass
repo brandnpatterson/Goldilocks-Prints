@@ -1,5 +1,4 @@
 @import ./index.sass
-
 a
   text-decoration: none
 li
@@ -8,17 +7,16 @@ li
 .background
   background: url('../public/images/landing.jpeg') no-repeat center center fixed
   background-size: cover
-  width: 100%auto
-  height: 100%auto
+  height: 100vh
   position: absolute
   z-index: -10
   +mediaQuery($smallest)
     background-attachment: scroll
-//     
-// .panel
-//   background: $white
-//   height: 300px
-//   margin: 20px 0
-//   padding: 50px 0
-//   text-align: center
-//   width: 100vw
+.panel
+  @extend .centered-parent
+  background: $white
+  height: 400px
+  text-align: center
+.panel.clear
+  background: none
+  color: $white

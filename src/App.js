@@ -7,13 +7,15 @@ import './App.sass'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div>
-        <Header />
-        <Routes />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className='background' src='../public/images/landing.jpeg'>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Routes />
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </div>
   )
 }
 

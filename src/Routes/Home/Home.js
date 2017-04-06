@@ -7,6 +7,9 @@ const Home = () => {
       <div className='landing'>
         <h2>GOLDILOX PRINTS</h2>
       </div>
+      <div className='panel'>
+        <h2>Home</h2>
+      </div>
     </div>
   )
 }
