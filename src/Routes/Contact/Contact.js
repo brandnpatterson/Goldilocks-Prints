@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.sass'
+import '../Routes.sass'
 
 class Contact extends React.Component {
   render () {

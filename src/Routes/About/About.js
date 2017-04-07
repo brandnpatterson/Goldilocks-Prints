@@ -1,5 +1,5 @@
 import React from 'react'
-import './About.sass'
+import '../Routes.sass'
 
 class About extends React.Component {
   render () {

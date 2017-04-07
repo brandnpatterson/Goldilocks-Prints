@@ -1,6 +1,7 @@
 # Goldilocks Prints
 Single Page Application Template built with React <br />
 It can be found live here: https://goldilox-prints.surge.sh
+
 # Done
 √  Navbar animation <br />
 √ drop-btn animation <br />

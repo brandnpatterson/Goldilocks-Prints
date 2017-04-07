@@ -1,5 +1,5 @@
 import React from 'react'
-import './Gallery.sass'
+import '../Routes.sass'
 
 class Gallery extends React.Component {
   render () {

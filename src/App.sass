@@ -1,17 +1,31 @@
-@import ./index.sass
-a
-  text-decoration: none
-li
-  display: inline-block
+//
+// App.sass holds classes and vars
+// Used in other files
+//
 
-.background
-  background: url('../public/images/landing.jpeg') no-repeat center center fixed
-  background-size: cover
-  height: 100vh
-  position: absolute
-  z-index: -10
-  +mediaQuery($smallest)
-    background-attachment: scroll
+@mixin mediaQuery($arg)
+  @media screen and (max-width: $arg)
+    @content
+
+$blue: #9ba0ab
+$dark: rgb(37,37,37)
+$gold: rgba(255,215,0, 0.5)
+$green: #bc9d77
+$light: #d3cabc
+$modal: rgba(0,0,0,0.4)
+$white : #fff
+
+$largest : '1600px'
+$large   : '1599px'
+$medium  : '1040px'
+$small   : '740px'
+$smallest: '440px'
+
+.centered-parent
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 .panel
   @extend .centered-parent
   background: $white
@@ -20,3 +34,5 @@ li
 .panel.clear
   background: none
   color: $white
+.text-shadow
+  text-shadow: 2px 2px 4px #000
