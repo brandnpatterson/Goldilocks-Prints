@@ -29,3 +29,54 @@
     z-index: 1
   li
     padding: 0 20px 0 20px
+
+/* nav links */
+.nav-links
+  ul
+    +mediaQuery($small)
+      display: none
+    li
+      &:nth-child(5)
+        position: fixed
+        background: $gold
+        border: 2px solid black
+        margin: 2%
+        right: -160px
+        padding: 20px
+        bottom: 20px
+    .shop-now-slide
+      animation: shop-now-slide 1s
+      animation-fill-mode: forwards
+      backface-visibility: hidden
+      perspective: 1000
+    @keyframes shop-now-slide
+      0%
+        right: -160px
+      100%
+        right: 30px
+/* nav-links-responsive */
+.nav-links-responsive
+  transition: all 0.35s ease-in
+  background: $modal
+  height: 100vh
+  position: fixed
+  top: 0
+  width: 100vw
+  ul
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    margin: 220px 0 0 -20px
+    z-index: 2
+    li
+      background: $white
+      border: 2px solid black
+      margin: 1%
+      flex: 1 1 20%
+      text-align: center
+      transition: all 0.6s ease-in
+      a
+        display: block
+        padding: 35px 0
+        &:hover
+          opacity: 0.5
