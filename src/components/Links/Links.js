@@ -34,14 +34,14 @@ export default class Links extends Component {
   render () {
     return (
       <ul>
-        <li><Link className='dropdown-top' to='/'>HOME</Link></li>
-        <li><Link className='dropdown-left' to='about'>ABOUT</Link></li>
-        <li><Link className='dropdown-right' to='contact'>CONTACT</Link></li>
-        <li><Link className='dropdown-bottom' to='gallery'>GALLERY</Link></li>
+        <li style={{...styles}}><Link to='/'>HOME</Link></li>
+        <li style={{...styles}}><Link to='about'>ABOUT</Link></li>
+        <li style={{...styles}}><Link to='contact'>CONTACT</Link></li>
+        <li style={{...styles}}><Link to='gallery'>GALLERY</Link></li>
         <li
           className={(this.state.scrolled ? 'shop-now-slide' : '')}
           style={{...styles}}
-        ><Link className='dropdown-hide' to='#0'>SHOP NOW</Link></li>
+        ><Link to='#0'>SHOP NOW</Link></li>
       </ul>
     )
   }
