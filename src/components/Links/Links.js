@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import './_Links.sass'
 
 const styles = {
   transition: 'all 0.45s ease-in'
@@ -33,14 +34,14 @@ export default class Links extends Component {
   render () {
     return (
       <ul>
-        <li><Link to='/'>HOME</Link></li>
-        <li><Link to='about'>ABOUT</Link></li>
-        <li><Link to='contact'>CONTACT</Link></li>
-        <li><Link to='gallery'>GALLERY</Link></li>
+        <li><Link className='dropdown-top' to='/'>HOME</Link></li>
+        <li><Link className='dropdown-left' to='about'>ABOUT</Link></li>
+        <li><Link className='dropdown-right' to='contact'>CONTACT</Link></li>
+        <li><Link className='dropdown-bottom' to='gallery'>GALLERY</Link></li>
         <li
           className={(this.state.scrolled ? 'shop-now-slide' : '')}
           style={{...styles}}
-        ><Link to='#0'>SHOP NOW</Link></li>
+        ><Link className='dropdown-hide' to='#0'>SHOP NOW</Link></li>
       </ul>
     )
   }

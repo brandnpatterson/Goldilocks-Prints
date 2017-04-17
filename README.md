@@ -9,10 +9,12 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Create onscroll listener fro navbar <br />
 √ Refactor Navbar - drop-btn and nav in one component & include it into header <br />
 √ Got background for mobile working perfectly <br />
+√ Find solid image for landing <br />
 
 # Current
-- center Contact Me text
-- Consider most simple solution the best
+- White Modal menu. X in middle of screen, change color on hover/click. No fade
 
 # Todo
+- center Contact Me text
 - Consider libraries to install (Unslider, Instafeed)
+- Change icon to only be bear with text

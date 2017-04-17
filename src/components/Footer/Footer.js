@@ -1,6 +1,6 @@
 import React from 'react'
 import Links from '../Links/Links'
-import './Footer.sass'
+import './_Footer.sass'
 
 const Footer = () => {
   const copyright = new Date().getFullYear()

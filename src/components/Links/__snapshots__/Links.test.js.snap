@@ -39,9 +39,9 @@ exports[`It should render the Links component as expected 1`] = `
       isActive={[Function]}
       replace={false}
       style={Object {}}
-      to="#0"
+      to="contact"
     >
-      GALLERY
+      CONTACT
     </Link>
   </li>
   <li>
@@ -53,9 +53,9 @@ exports[`It should render the Links component as expected 1`] = `
       isActive={[Function]}
       replace={false}
       style={Object {}}
-      to="#0"
+      to="gallery"
     >
-      CONTACT
+      GALLERY
     </Link>
   </li>
   <li

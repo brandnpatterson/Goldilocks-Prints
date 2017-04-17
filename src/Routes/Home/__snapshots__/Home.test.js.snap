@@ -5,11 +5,18 @@ exports[`It should render the Home component as expected 1`] = `
   className="home"
 >
   <div
+    className="landing"
+  >
+    <h2>
+      GOLDILOX PRINTS
+    </h2>
+  </div>
+  <div
     className="panel"
   >
-    <h1>
+    <h2>
       Home
-    </h1>
+    </h2>
   </div>
 </div>
 `;

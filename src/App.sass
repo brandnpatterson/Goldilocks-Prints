@@ -1,38 +1,16 @@
 //
-// App.sass holds classes and vars
-// Used in other files
+// App.sass holds rules
+// Not used in other files
 //
 
-@mixin mediaQuery($arg)
-  @media screen and (max-width: $arg)
-    @content
+@import ./index
 
-$blue: #9ba0ab
-$dark: rgb(37,37,37)
-$gold: rgba(255,215,0, 0.5)
-$green: #bc9d77
-$light: #d3cabc
-$modal: rgba(0,0,0,0.4)
-$white : #fff
-
-$largest : '1600px'
-$large   : '1599px'
-$medium  : '1040px'
-$small   : '740px'
-$smallest: '440px'
-
-.centered-parent
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-.panel
-  @extend .centered-parent
-  background: $white
-  height: 400px
-  text-align: center
-.panel.clear
-  background: none
-  color: $white
-.text-shadow
-  text-shadow: 2px 2px 4px #000
+.background
+  background: url('../public/images/new1.jpg') no-repeat center center fixed
+  background-size: cover
+  height: 1000px
+  width: 100vw
+  position: absolute
+  z-index: -10
+  +mediaQuery($smallest)
+    background-attachment: scroll

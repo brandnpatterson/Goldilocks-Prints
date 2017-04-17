@@ -1,4 +1,4 @@
-@import ../App
+@import ../index
 
 .landing
   // extends found in '../App.sass'
@@ -13,8 +13,6 @@
   +mediaQuery($smallest)
     padding-left: 10px
   width: 100vw
-
-.landing
   h2
     @keyframes slide-down
       0%
@@ -38,3 +36,11 @@
     text-align: center
     position: absolute
     z-index: -10
+.panel
+  @extend .centered-parent
+  background: $white
+  height: 400px
+  text-align: center
+.panel.clear
+  background: none
+  color: $white
