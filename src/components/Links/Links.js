@@ -33,7 +33,7 @@ export default class Links extends Component {
 
   render () {
     return (
-      <ul>
+      <ul className='layer'>
         <li style={{...styles}}><Link to='/'>HOME</Link></li>
         <li style={{...styles}}><Link to='about'>ABOUT</Link></li>
         <li style={{...styles}}><Link to='contact'>CONTACT</Link></li>
