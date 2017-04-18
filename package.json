@@ -1,4 +1,3 @@
-
 {
   "name": "Goldilocks-Prints",
   "version": "2.0.0",
@@ -8,11 +7,12 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf public/bundle.js",
-    "deploy": "webpack -p && surge",
-    "dev": "webpack-dev-server --hot --inline",
+    "deploy": " gulp && webpack -p && surge",
+    "dev": "gulp && webpack-dev-server --hot --inline",
     "start": "npm run clean && npm run dev"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router": "4.0.0-alpha.5"
@@ -23,7 +23,6 @@
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
-    "css-loader": "^0.26.2",
     "eslint": "^3.16.1",
     "eslint-config-standard": "^7.0.0",
     "eslint-config-standard-jsx": "^3.2.0",
@@ -32,14 +31,11 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.1.1",
-    "file-loader": "^0.10.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
     "node-sass": "^4.5.0",
-    "postcss-loader": "^1.3.3",
-    "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
-    "sass-loader": "^6.0.2",
-    "style-loader": "^0.13.2",
-    "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
