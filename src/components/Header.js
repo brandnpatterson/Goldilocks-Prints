@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 
 const logo = 'public/images/goldilocksbear.gif'
 
@@ -54,9 +54,9 @@ class Header extends Component {
           onClick={this.onNavSelect}>
           <ul>
             <li style={{...styles}}><Link to='/'>HOME</Link></li>
-            <li style={{...styles}}><Link to='about'>ABOUT</Link></li>
-            <li style={{...styles}}><Link to='contact'>CONTACT</Link></li>
-            <li style={{...styles}}><Link to='gallery'>GALLERY</Link></li>
+            <li style={{...styles}}><Link to='/about'>ABOUT</Link></li>
+            <li style={{...styles}}><Link to='/contact'>CONTACT</Link></li>
+            <li style={{...styles}}><Link to='/gallery'>GALLERY</Link></li>
             <li style={{...styles}}><Link to='#0'>SHOP NOW</Link></li>
           </ul>
         </nav>
