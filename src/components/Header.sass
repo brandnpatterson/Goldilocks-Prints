@@ -1,0 +1,85 @@
+@import ../index
+
+.header
+  .logo-background
+    background: $white
+    position: fixed
+    z-index: 2
+    height: 60px
+    width: 60px
+    cursor: pointer
+    &:hover
+      opacity: 0.5
+    +mediaQuery($small)
+      height: 100px
+      width: 100px
+    .logo
+      margin: 12px 0 0 12px
+      height: 35px
+      +mediaQuery($small)
+        margin: 20px 0 0 20px
+        height: 60px
+  .drop-btn
+    background: $modalWhite
+    cursor: pointer
+    position: fixed
+    z-index: 2
+    left: 60px
+    height: 60px
+    width: 60px
+    +mediaQuery($small)
+      left: 100px
+      height: 100px
+      width: 100px
+    .bar1,
+    .bar2,
+    .bar3
+      transition: 0.2s ease-out
+      width: 35px
+      height: 3px
+      margin: 6px auto
+      background: $white
+    .bar1
+      margin-top: 20px
+      +mediaQuery($small)
+        margin-top: 38px
+.drop-btn-transform
+  @extend .drop-btn
+  .bar1
+    transform: rotate(45deg) translate(7px, 7px)
+  .bar2
+    opacity: 0
+  .bar3
+    transform: rotate(-45deg) translate(6px, -6px)
+.modal
+  display: none
+.modal-visible
+  height: 100vh
+  background: $modal
+  position: fixed
+  top: 0
+  width: 100vw
+  z-index: 1
+  ul
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: 50%
+    height: 100%
+    text-align: center
+    margin: 0 auto
+    padding: 75px 0
+    max-width: 50%
+    li
+      border: 2px solid $white
+      cursor: pointer
+      margin: 6%
+      a
+        border-radius: 50px
+        color: $white
+        display: block
+        padding: 10px 0
+      &:hover
+        opacity: 0.5
+      &:active
+        opacity: 0.5

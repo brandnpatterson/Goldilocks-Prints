@@ -5,6 +5,7 @@ import Contact from './Contact'
 import Gallery from './Gallery'
 import Home from './Home'
 import NotFound from './NotFound'
+import './Routes.sass'
 
 const Routes = () => {
   return (

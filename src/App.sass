@@ -5,15 +5,15 @@
 
 @import ./index
 
+body
+  overflow-x: hidden
 
 .background
   background: url('../public/images/landing.jpg') no-repeat center center fixed
   background-size: cover
   background-attachment: scroll
-  padding-left: 200px
   +mediaQuery($small)
     background-attachment: fixed
-    padding: 0
   height: 1000px
   width: 100vw
   position: absolute

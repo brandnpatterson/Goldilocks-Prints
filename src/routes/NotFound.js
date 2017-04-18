@@ -1,5 +1,4 @@
 import React from 'react'
-import './Routes.sass'
 
 const NotFound = () => {
   return (
