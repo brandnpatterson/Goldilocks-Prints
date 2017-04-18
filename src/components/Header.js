@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
-import './Header.sass'
+import { Link } from 'react-router-dom'
 
 const logo = 'public/images/goldilocksbear.gif'
 

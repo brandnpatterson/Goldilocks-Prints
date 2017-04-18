@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 const NotFound = () => {
   return (
-    <div className='home'>
-      <div className='flex-container'>
-        <h1>404 Not Found</h1>
+    <div className='not-found'>
+      <div className='landing'>
+        <h2>NotFound</h2>
+      </div>
+      <div className='panel'>
+        <h2>NotFound</h2>
       </div>
     </div>
   )

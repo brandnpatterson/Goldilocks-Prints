@@ -1,5 +1,4 @@
 import React from 'react'
-import './Footer.sass'
 
 const Footer = () => {
   const copyright = new Date().getFullYear()
