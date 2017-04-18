@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Match, Miss } from 'react-router-dom'
+import React from 'react'
+import { Match, Miss } from 'react-router'
 import About from './About'
 import Contact from './Contact'
 import Gallery from './Gallery'

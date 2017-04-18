@@ -1,6 +1,7 @@
 const path = require('path')
 
 module.exports = {
+  devtool: 'inline-sourcemap',
   devServer: {
     historyApiFallback: true,
     port: 8888
@@ -31,16 +32,20 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loaders: [ 'style-loader', 'css-loader' ]
+        test: /\.sass$/,
+        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
       },
       {
-        test: /\.scss$/,
-        loader: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
+        test: /\.s?css$/,
+        loaders: [ 'style-loader', 'css-loader', 'postcss-loader', 'sass-loader' ]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'url-loader'
+      },
+      {
+         test: /\.html$/,
+         loader: 'raw-loader'
       }
     ]
   },
