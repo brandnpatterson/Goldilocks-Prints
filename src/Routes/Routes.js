@@ -1,10 +1,10 @@
 import React from 'react'
 import { Match, Miss } from 'react-router'
-import About from './About/About'
-import Contact from './Contact/Contact'
-import Gallery from './Gallery/Gallery'
-import Home from './Home/Home'
-import NotFound from './NotFound/NotFound'
+import About from './About'
+import Contact from './Contact'
+import Gallery from './Gallery'
+import Home from './Home'
+import NotFound from './NotFound'
 
 const Routes = () => {
   return (
