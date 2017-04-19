@@ -10,8 +10,9 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Refactor Navbar - drop-btn and nav in one component & include it into header <br />
 √ Got background for mobile working perfectly <br />
 √ Find solid image for landing <br />
+√ Add back postCSS
 
 # Current
-- Add back postCSS
+- Set up layout
 
 # Todo

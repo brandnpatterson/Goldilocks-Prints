@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 // components
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import Header from './components/Header'
 
 // routes
@@ -14,7 +14,6 @@ import Gallery from './routes/Gallery'
 const App = () => {
   return (
     <div>
-      <div className='background' />
       <Router>
         <div>
           <Header />
@@ -22,7 +21,7 @@ const App = () => {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
           <Route path='/gallery' component={Gallery} />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </div>

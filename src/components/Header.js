@@ -50,7 +50,7 @@ class Header extends Component {
           <div className='bar2' />
           <div className='bar3' />
         </div>
-        <nav className={'modal' + (this.state.transform ? '-visible' : '')}
+        <nav className={'nav' + (this.state.transform ? '-visible' : '')}
           onClick={this.onNavSelect}>
           <ul>
             <li style={{...styles}}><Link to='/'>HOME</Link></li>

@@ -1,3 +1,15 @@
 @mixin mediaQuery($arg)
   @media screen and (min-width: $arg)
     @content
+
+@mixin background($imgpath)
+    background: url($imgpath) no-repeat left center fixed
+    height: 100%
+    width: 100vw
+    position: absolute
+    z-index: -10
+    background-size: cover
+    top: -205px
+    +mediaQuery($small)
+      background-attachment: fixed
+      background-size: cover
