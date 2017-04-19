@@ -1,25 +1,9 @@
 footer
   background-color: $maroon
-  display: flex
-  flex-direction: row
-  flex-wrap: wrap
   height: 100px
-  overflow: hidden
-  position: absolute
   width: 100vw
-  bottom: auto
+  position: absolute
+  bottom: 0
   z-index: -1
-  ul
-    padding: 0 0 0 5px
-    li
-      padding: 30px 10px 0 10px
-      margin-bottom: 100px
-      +mediaQuery($smallest)
-        margin-bottom: 0
-      text-align: center
-
-      &:last-child
-        +mediaQuery($smallest)
-        margin-bottom: 50px
   a
     color: $light

@@ -1,0 +1,37 @@
+.gallery
+  .panel
+    padding-top: 200px
+.gallery,
+.art,
+.photography,
+.design
+  .panel
+    @extend .flex-container
+    background: $maroon
+    height: 500px
+    flex-direction: row
+    flex-wrap: wrap
+  ul
+    padding: 0
+  h2,
+  h3,
+  li
+    color: $white
+    max-width: 70%
+    letter-spacing: 5px
+  .flex-container
+    flex-direction: row
+    a
+      padding: 10px
+      color: $white
+.photography
+  background: $maroon
+  height: 2000px
+  width: 100vw
+  .panel
+    margin: 0 auto
+    padding: 0 auto
+    width: 50%
+  img
+    width: 200px
+    height: auto

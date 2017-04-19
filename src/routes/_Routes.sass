@@ -1,18 +1,29 @@
 
-.home
+.home,
+.about
   @include background('../public/images/landing.jpg')
 
 .about
-    @include background('../public/images/landing.jpg')
+  h2
+    padding: 30px
+    color: $black
+    max-width: 70%
+    letter-spacing: 5px
+  h3
+    padding: 30px
+    color: $black
+  .panel-one
+    background: $white
+    @extend .flex-container
+    margin-top: 956px
+    height: 400px
 
-.panel
-  @extend .centered-parent
-  margin-top: 1000px
-  background: $white
-  height: 400px
-  text-align: center
-  img
-    width: 50%
-.panel.clear
-  background: none
-  color: $white
+  .panel-two
+    background: $lightgray
+    @extend .flex-container
+    height: 200px
+
+  .panel-three
+    background: $white
+    @extend .flex-container
+    height: 400px
