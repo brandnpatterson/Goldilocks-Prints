@@ -1,7 +1,9 @@
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
+  devtool: 'cheap-module-source-map',
   devServer: {
     historyApiFallback: true,
     port: 8888
@@ -10,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
-    publicPath: 'public'
+    publicPath: '/public/'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -35,7 +37,7 @@ module.exports = {
         test: /\.s?css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: [ 'css-loader', 'sass-loader' ]
+          use: [ 'css-loader', 'postcss-loader', 'sass-loader' ]
         })
       },
       {
@@ -52,7 +54,8 @@ module.exports = {
     new ExtractTextPlugin({
       filename: 'index.css',
       allChunks: true
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   stats: {
     colors: true,

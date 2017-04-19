@@ -18,12 +18,10 @@ const App = () => {
       <Router>
         <div>
           <Header />
-          <div>
-            <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/gallery' component={Gallery} />
-          </div>
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/gallery' component={Gallery} />
           <Footer />
         </div>
       </Router>

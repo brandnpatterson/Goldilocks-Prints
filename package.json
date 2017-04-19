@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf public/bundle.js & rimraf public/index.css",
     "deploy": "webpack -p && surge",
-    "dev": "webpack-dev-server --content-base ./ --hot --inline",
+    "dev": "webpack-dev-server --content-base ./ --inline",
     "start": "npm run clean && npm run dev"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
     "node-sass": "^4.5.0",
+    "postcss-loader": "^1.3.3",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.1",
     "sass-loader": "^6.0.3",
