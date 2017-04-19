@@ -12,9 +12,6 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Find solid image for landing <br />
 
 # Current
-- White Modal menu. X in middle of screen, change color on hover/click. No fade
+- Add back postCSS
 
 # Todo
-- center Contact Me text
-- Consider libraries to install (Unslider, Instafeed)
-- Change icon to only be bear with text
