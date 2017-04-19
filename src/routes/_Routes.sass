@@ -2,8 +2,6 @@
 .home,
 .about
   @include background('../public/images/landing.jpg')
-
-.about
   h2
     padding: 30px
     color: $black
@@ -27,3 +25,6 @@
     background: $white
     @extend .flex-container
     height: 400px
+.home
+  .flex-container
+    flex-direction: column
