@@ -11,8 +11,8 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Got background for mobile working perfectly <br />
 √ Find solid image for landing <br />
 √ Add back postCSS <br />
-
+√ Set fade-in transition for drop-btn to be faster than rest of content
 # Current
-- Set up layout
+- Add text to fade in - maybe just fade in with content
 
 # Todo

@@ -13,21 +13,22 @@ import Art from './routes/Gallery/Art'
 import Photography from './routes/Gallery/Photography'
 import Design from './routes/Gallery/Design'
 
-const App = (props) => {
+const App = () => {
   return (
-    <div className='background'>
+    <div>
       <Router>
         <div>
           <Header />
+          <div className='background' />
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/art' component={Art} />
           <Route path='/photography' component={Photography} />
           <Route path='/design' component={Design} />
           <Route path='/contact' component={Contact} />
+          <Footer />
         </div>
       </Router>
-      <Footer />
     </div>
   )
 }
