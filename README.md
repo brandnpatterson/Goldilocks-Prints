@@ -1,5 +1,5 @@
 # Goldilocks Prints
-Single Page Application Template built with React <br />
+Single Page Application built with React <br />
 It can be found live here: https://goldilox-prints.surge.sh
 
 # Done
@@ -12,7 +12,11 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Find solid image for landing <br />
 √ Add back postCSS <br />
 √ Set fade-in transition for drop-btn to be faster than rest of content
+√ Set Drop-btn to be fixed and to the side
+
 # Current
-- Add text to fade in - maybe just fade in with content
 
 # Todo
+- Fill Home Page
+- Fill About Page
+- Fill Contact

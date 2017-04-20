@@ -1,40 +1,38 @@
-.home
+.home-landing
+  +background('../public/images/landing.jpg')
+  opacity: 0
+  @keyframes fade-in-background
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+  animation: fade-in-background 1s
+  animation-delay: 0.5s
+  animation-fill-mode: forwards
+  backface-visibility: hidden
+  perspective: 1000
+  h2
+    color: $white
+    font-family: $mainFont
+    letter-spacing: 5px
+    position: absolute
+    top: 20px
+    left: 3px
+    padding: 0
+    margin: 0
+    width: 2000px
+    font-size: 23px
+    +mediaQuery($small)
+      top: 50px
+      left: 30px
+      font-size: 50px
+    +mediaQuery($medium)
+      font-size: 80px
+.home-content
   padding-top: 81%
-  +mediaQuery($medium)
+  +mediaQuery($small)
     padding-top: 100vh
   li
     padding: 20px
-  .arrow
-    @keyframes arrow-jump
-      0%
-        transform: translate(0, -5px)
-      50%
-        transform: translate(0, 0)
-      100%
-        transform: translate(0, -5px)
-    animation: arrow-jump 2s
-    animation-direction: forwards
-    animation-iteration-count: infinite
-  .arrow-right,
-  .arrow-left
-    width: 20px
-    height: 2px
-    +mediaQuery($small)
-      width: 30px
-      height: 3px
-    background: $white
-    border-radius: 100px
-    position: absolute
-    z-index: 10
-    bottom: 10px
-    left: 50%
-  .arrow-right
-    transform: translate(0, -10px) rotate(-45deg)
-    +mediaQuery($small)
-      transform: translate(0, -10px) rotate(-45deg)
-  .arrow-left
-    transform: translate(-13px, -10px) rotate(45deg)
-    +mediaQuery($small)
-      transform: translate(-20px, -10px) rotate(45deg)
   .flex-container
     flex-direction: row
