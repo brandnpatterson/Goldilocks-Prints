@@ -1,7 +1,5 @@
 .home
   +background('../public/images/landing.jpg')
-  .flex-container
-    flex-direction: row
   li
     padding: 20px
   padding-top: 64%
@@ -9,6 +7,40 @@
     padding-top: 75%
   +mediaQuery($medium)
     padding-top: 100vh
+  .arrow
+    @keyframes arrow-jump
+      0%
+        transform: translate(0, -5px)
+      50%
+        transform: translate(0, 0)
+      100%
+        transform: translate(0, -5px)
+    animation: arrow-jump 2s
+    animation-direction: forwards
+    animation-iteration-count: infinite
+  .arrow-right,
+  .arrow-left
+    width: 20px
+    height: 2px
+    +mediaQuery($small)
+      width: 30px
+      height: 3px
+    background: $white
+    border-radius: 100px
+    position: absolute
+    z-index: 10
+    bottom: 10px
+    left: 50%
+  .arrow-right
+    transform: translate(0, -5px) rotate(-45deg)
+    +mediaQuery($small)
+      transform: translate(0, -10px) rotate(-45deg)
+  .arrow-left
+    transform: translate(-12px, -5px) rotate(45deg)
+    +mediaQuery($small)
+      transform: translate(-20px, -10px) rotate(45deg)
+  .flex-container
+    flex-direction: row
 .home,
 .about
   h2
