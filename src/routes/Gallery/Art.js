@@ -1,10 +1,24 @@
 import React from 'react'
+import Gallery from './Gallery'
 
 const Art = () => {
   return (
     <div className='art'>
-      <div className='panel'>
-        <h2>Art</h2>
+      <Gallery />
+      <div className='panel-white'>
+        <div className='panel-gray'>
+          Art
+        </div>
+      </div>
+      <div className='panel-white'>
+        <div className='panel-gray'>
+          Art
+        </div>
+      </div>
+      <div className='panel-white'>
+        <div className='panel-gray'>
+          Art
+        </div>
       </div>
     </div>
   )

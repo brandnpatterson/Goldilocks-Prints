@@ -55,7 +55,7 @@ class Header extends Component {
           <ul>
             <li style={{...styles}}><Link to='/'>HOME</Link></li>
             <li style={{...styles}}><Link to='/about'>ABOUT</Link></li>
-            <li style={{...styles}}><Link to='/gallery'>GALLERY</Link></li>
+            <li style={{...styles}}><Link to='/photography'>GALLERY</Link></li>
             <li style={{...styles}}><Link to='/contact'>CONTACT</Link></li>
           </ul>
         </nav>

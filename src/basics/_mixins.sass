@@ -3,15 +3,9 @@
     @content
 
 @mixin background($imgpath)
-    background: url($imgpath) no-repeat left center fixed
-    height: 100%
-    width: 100vw
-    position: absolute
-    z-index: -10
-    background-size: cover
-    background-attachment: scroll
-    top: -205px
-    padding: 0
-    // +mediaQuery($small)
-    //   background-attachment: scroll
-    //   background-size: cover
+    background: url($imgpath) no-repeat center top fixed
+    background-size: contain
+    background-position: 0% -10%
+    +mediaQuery($medium)
+      background-size: cover
+      background-position: 0% 0%
