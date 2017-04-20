@@ -29,10 +29,63 @@
     +mediaQuery($medium)
       font-size: 80px
 .home-content
+  a
+    color: $black
+  width: 100vw
   padding-top: 81%
   +mediaQuery($small)
     padding-top: 100vh
   li
     padding: 20px
-  .flex-container
+  .flex-center
     flex-direction: row
+  .panel-gray,
+  .panel-black,
+  .panel-maroon,
+    @extend .flex-center
+  .panel-white,
+  .panel-gray,
+  .panel-black,
+  .panel-maroon,
+    height: 400px
+    h2
+      font-weight: 200
+      max-width: 80%
+  .panel-gray
+    height: auto
+    min-height: 100%
+    h2
+      padding: 80px 0
+      font-size: 20px
+      max-width: 80%
+      +mediaQuery($small)
+        font-size: 25px
+      color: $gray
+      text-align: center
+      line-height: 35px
+  .panel-white
+    height: auto
+    min-height: 100%
+    .flex-center
+      justify-content: space-around
+      max-width: 80%
+      margin: 0 auto
+      +mediaQuery($small)
+        max-width: 90%
+      h2
+        text-align: left
+        font-size: 25px
+        +mediaQuery($small)
+          font-size: 40px
+          padding-right: 50px
+      .button
+        &:hover
+          opacity: 0.5
+  .image-panel
+    display: block
+    overflow: visible
+    img
+      max-width: 40%
+      margin: 2%
+      &:hover
+        opacity: 0.9

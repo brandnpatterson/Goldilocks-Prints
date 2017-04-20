@@ -15,7 +15,7 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Set Drop-btn to be fixed and to the side
 
 # Current
-
+- Add Content to home page
 # Todo
 - Fill Home Page
 - Fill About Page

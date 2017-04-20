@@ -23,17 +23,17 @@ const Photography = () => {
         <div className='panel-gray'>
           <h2>Musician Headshots</h2>
         </div>
-        <img src='../../public/images/gallery/guitar1.jpg' alt='Senior Pics' />
-        <img src='../../public/images/gallery/guitar2.jpg' alt='Senior Pics' />
-        <img src='../../public/images/gallery/guitar3.jpg' alt='Senior Pics' />
-        <img src='../../public/images/gallery/guitar4.jpg' alt='Senior Pics' />
+        <img src='../../public/images/gallery/guitar1.jpg' alt='Guitar Player' />
+        <img src='../../public/images/gallery/guitar2.jpg' alt='Guitar Player' />
+        <img src='../../public/images/gallery/guitar3.jpg' alt='Guitar Player' />
+        <img src='../../public/images/gallery/guitar4.jpg' alt='Guitar Player' />
       </div>
       <div className='image-panel'>
         <div className='panel-gray'>
           <h2>Engagement Pictures</h2>
         </div>
-        <img src='../../public/images/gallery/engagement1.jpg' alt='Senior Pics' />
-        <img src='../../public/images/gallery/engagement2.jpg' alt='Senior Pics' />
+        <img src='../../public/images/gallery/engagement1.jpg' alt='Engagement Shoot' />
+        <img src='../../public/images/gallery/engagement2.jpg' alt='Engagement Shoot' />
       </div>
       <Footer />
     </div>

@@ -9,12 +9,17 @@ a
   text-decoration: none
 li
   display: inline-block
-.flex-container
+.button
+  @extend .flex-center
+  width: 135px
+  height: 45px
+  border: 3px solid $black
+  background: none
+.flex,
+.flex-center
   display: flex
   flex-direction: column
+.flex-center
   align-items: center
   justify-content: center
   text-align: center
-  width: 100vw
-  padding: 0
-  margin: 0
