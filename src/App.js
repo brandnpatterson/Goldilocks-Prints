@@ -9,9 +9,9 @@ import Footer from './components/Footer'
 import Home from './routes/Home/Home'
 import About from './routes/About'
 import Contact from './routes/Contact'
-import Art from './routes/Gallery/Art'
-import Photography from './routes/Gallery/Photography'
-import Design from './routes/Gallery/Design'
+import Art from './routes/Art'
+import Photography from './routes/Photography'
+import Design from './routes/Design'
 
 const App = () => {
   return (

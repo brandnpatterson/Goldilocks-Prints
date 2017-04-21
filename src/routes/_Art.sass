@@ -1,0 +1,30 @@
+// art, photography, design
+#active
+  border: 2px $white solid
+.art,
+.photography,
+.design
+  background: $black
+  .panel-gray
+    width: 100vw
+    height: 70px
+    margin: 50px auto
+    h2
+      color: $black
+      letter-spacing: 5px
+      padding-top: 5px
+  .image-panel
+    background: $black
+    flex-direction: row
+    max-width: 100%
+
+// photography
+.photography
+  .image-panel
+    img
+      +mediaQuery($small)
+        width: 400px
+  .image-panel.large
+    img
+      +mediaQuery($small)
+        width: 200px

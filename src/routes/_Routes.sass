@@ -5,6 +5,13 @@
     max-width: 70%
   h3
     color: $black
+.panel-white,
+.panel-gray,
+.panel-maroon,
+.panel-black,
+.image-panel
+  height: auto
+  min-height: 100%
 .panel-white
   background: $white
 .panel-gray
@@ -13,7 +20,7 @@
   background: $maroon
 .panel-black
   background: $black
-.image-panel
+.panel-image
   @extend .flex-center
   display: block
   overflow: visible
@@ -23,10 +30,3 @@
     margin: 2%
     &:hover
       opacity: 0.9
-.panel-white,
-.panel-gray,
-.panel-maroon,
-.panel-black,
-.image-panel
-  height: auto
-  min-height: 100%
