@@ -1,6 +1,9 @@
 .gallery
+  padding-top: 100px
+  +mediaQuery($small)
+    padding-top: 300px
   .panel
-    @extend .flex-container
+    @extend .flex-center
     background: $maroon
     padding-top: 200px
     height: 300px
@@ -14,7 +17,9 @@
     color: $white
     max-width: 70%
     letter-spacing: 5px
-  .flex-container
+  h2
+    font-family: $mainFont
+  .flex-center
     flex-direction: row
     a
       padding: 10px
@@ -30,6 +35,7 @@
     flex-direction: row
     max-width: 100%
   .panel-gray
+    width: 100vw
     height: 70px
     margin: 50px auto
     h2

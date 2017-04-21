@@ -1,12 +1,12 @@
 .home-landing
   +background('../public/images/landing.jpg')
   opacity: 0
-  @keyframes fade-in-background
+  @keyframes fade-in-landing
     0%
       opacity: 0
     100%
       opacity: 1
-  animation: fade-in-background 1s
+  animation: fade-in-landing 1s
   animation-delay: 0.5s
   animation-fill-mode: forwards
   backface-visibility: hidden
@@ -16,11 +16,11 @@
     font-family: $mainFont
     letter-spacing: 5px
     position: absolute
-    top: 20px
-    left: 3px
     padding: 0
     margin: 0
     width: 2000px
+    top: 20px
+    left: 3px
     font-size: 23px
     +mediaQuery($small)
       top: 50px
@@ -29,16 +29,22 @@
     +mediaQuery($medium)
       font-size: 80px
 .home-content
+  @keyframes fade-in-content
+    0%
+      opacity: 0.5
+    100%
+      opacity: 1
+  animation: fade-in-content 1s
   a
     color: $black
   width: 100vw
-  padding-top: 81%
+  padding-top: 80%
   +mediaQuery($small)
     padding-top: 100vh
   li
     padding: 20px
   .flex-center
-    flex-direction: row
+    flex-direction: column
   .panel-gray,
   .panel-black,
   .panel-maroon,
@@ -67,18 +73,17 @@
     height: auto
     min-height: 100%
     .flex-center
-      justify-content: space-around
       max-width: 80%
-      margin: 0 auto
+      margin: 50px auto -20px
       +mediaQuery($small)
         max-width: 90%
       h2
-        text-align: left
+        text-align: center
         font-size: 25px
         +mediaQuery($small)
           font-size: 40px
-          padding-right: 50px
       .button
+        width: 150px
         &:hover
           opacity: 0.5
   .image-panel
@@ -89,3 +94,4 @@
       margin: 2%
       &:hover
         opacity: 0.9
+  
