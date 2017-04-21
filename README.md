@@ -13,9 +13,10 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Add back postCSS <br />
 √ Set fade-in transition for drop-btn to be faster than rest of content
 √ Set Drop-btn to be fixed and to the side
+√ Completed gallery active class
 
 # Current
-- Add Content to home page
+
 # Todo
 - Fill Home Page
 - Fill About Page

@@ -90,8 +90,23 @@
   .image-panel
     display: block
     overflow: visible
+    padding: 50px 0 300px
     img
       max-width: 40%
       margin: 2%
       &:hover
         opacity: 0.9
+  .contact
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/about-me.jpg') no-repeat center top fixed
+    background-size: cover
+    background-position: 60% 0%
+    position: relative
+    height: 70vh
+    width: 100vw
+    z-index: -100
+    +mediaQuery($small)
+      background-size: cover
+      background-position: 80% 0%
+    h2
+      color: $white
+    // take away bottom of contained image

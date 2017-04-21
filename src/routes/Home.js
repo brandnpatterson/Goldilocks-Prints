@@ -32,19 +32,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='panel-gray'>
-            <ul className='flex-center'>
-              <li><Link to='/art'>ART</Link></li>
-              <li><Link to='/photography'>PHOTOGRAPHY</Link></li>
-              <li><Link to='/design'>DESIGN</Link></li>
-            </ul>
-          </div>
-          <div className='panel-white'>
-            <ul className='flex-center'>
-              <li><Link to='/art'>ART</Link></li>
-              <li><Link to='/photography'>PHOTOGRAPHY</Link></li>
-              <li><Link to='/design'>DESIGN</Link></li>
-            </ul>
+          <div className='panel-white contact'>
+            <h2>Contact Me</h2>
           </div>
         </div>
       </div>
