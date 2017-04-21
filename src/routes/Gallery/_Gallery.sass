@@ -1,54 +1,26 @@
 .gallery
   padding-top: 100px
-  +mediaQuery($small)
-    padding-top: 300px
-  .panel
-    @extend .flex-center
-    background: $maroon
-    padding-top: 200px
-    height: 300px
-    flex-direction: row
-    flex-wrap: wrap
+  width: 100vw
   ul
-    padding: 0
+    padding-top: 40px
   h2,
-  h3,
   li
     color: $white
+    display: inline-block
     max-width: 70%
     letter-spacing: 5px
   h2
     font-family: $mainFont
   .flex-center
     flex-direction: row
-    a
-      padding: 10px
-      color: $white
-.art,
-.photography,
-.design
-  background: $maroon
-  height: 2000px
-  width: 100vw
-  .image-panel
-    background: $maroon
-    flex-direction: row
-    max-width: 100%
-  .panel-gray
-    width: 100vw
-    height: 70px
-    margin: 50px auto
-    h2
-      color: $black
-      letter-spacing: 5px
-      padding-top: 5px
-  h2,
-  h3,
-  li
-    color: $white
-.photography
-  img
-    width: 50%
-    height: auto
     +mediaQuery($small)
-      width: 300px
+      justify-content: space-around
+    padding-left: 0
+    a
+      border: 2px $black solid
+      padding: 15px 5px
+      font-size: 10px
+      +mediaQuery($small)
+        padding: 20px
+        font-size: 15px
+      color: $white

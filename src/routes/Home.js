@@ -22,7 +22,7 @@ const Home = () => {
             <div className='flex'>
               <div className='flex-center'>
                 <h2>Latest Designs</h2>
-                <Link to='/photography'><div className='button'>View Gallery</div></Link>
+                <Link to='/photography'><div className='button view-gallery'>View Gallery</div></Link>
               </div>
               <div className='image-panel'>
                 <Link to='/photography' ><img src='../../public/images/gallery/engagement2.jpg' alt='Engagement Shoot' /></Link>
