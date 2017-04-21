@@ -2,11 +2,16 @@
 @import 'basics/_mixins';
 @import 'basics/_basics';
 
-@import 'components/_Footer';
-@import 'components/_Header';
+// components
+@import 'components/Footer/_Footer';
+@import 'components/Header/_Header';
+@import 'components/Header/_Logo_DropBtn';
+@import 'components/Header/_Nav';
+@import 'components/Gallery/_Gallery';
+
+// routes
 @import 'routes/_About';
 @import 'routes/_Art';
 @import 'routes/_Routes';
-@import 'routes/Gallery/_Gallery';
 @import 'routes/Home/_Home-landing';
 @import 'routes/Home/_Home-content';

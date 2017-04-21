@@ -25,7 +25,7 @@ const Home = () => {
               <h2>Latest Designs</h2>
               <Link to='/photography'><div className='button home-button'>View Gallery</div></Link>
             </div>
-            <div className='image-panel'>
+            <div className='image-flex'>
               <Link to='/photography' ><img src='../../public/images/gallery/engagement2.jpg' alt='Engagement Shoot' /></Link>
               <Link to='/photography' ><img src='../../public/images/gallery/guitar3.jpg' alt='Guitar Player' /></Link>
               <Link to='/photography' ><img src='../../public/images/gallery/guitar2.jpg' alt='Guitar Player' /></Link>

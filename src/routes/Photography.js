@@ -1,6 +1,6 @@
 import React from 'react'
-import Gallery from './Gallery/Gallery'
-import Footer from '../components/Footer'
+import Gallery from '../components/Gallery/Gallery'
+import Footer from '../components/Footer/Footer'
 
 const Photography = () => {
   return (
@@ -10,7 +10,7 @@ const Photography = () => {
         <div className='panel-gray'>
           <h2>Senior Pictures</h2>
         </div>
-        <div className='image-panel large'>
+        <div className='image-flex large'>
           <img src='../../public/images/gallery/senior-pics1.jpg' alt='Senior Pics' />
           <img src='../../public/images/gallery/senior-pics2.jpg' alt='Senior Pics' />
           <img src='../../public/images/gallery/senior-pics3.jpg' alt='Senior Pics' />
@@ -21,7 +21,7 @@ const Photography = () => {
         <div className='panel-gray'>
           <h2>Musician Headshots</h2>
         </div>
-        <div className='image-panel'>
+        <div className='image-flex'>
           <img src='../../public/images/gallery/guitar1.jpg' alt='Guitar Player' />
           <img src='../../public/images/gallery/guitar2.jpg' alt='Guitar Player' />
           <img src='../../public/images/gallery/guitar3.jpg' alt='Guitar Player' />
@@ -32,7 +32,7 @@ const Photography = () => {
         <div className='panel-gray'>
           <h2>Engagement Pictures</h2>
         </div>
-        <div className='image-panel'>
+        <div className='image-flex'>
           <img src='../../public/images/gallery/engagement1.jpg' alt='Engagement Shoot' />
           <img src='../../public/images/gallery/engagement2.jpg' alt='Engagement Shoot' />
         </div>
@@ -41,7 +41,7 @@ const Photography = () => {
         <div className='panel-gray'>
           <h2>Menswear Pictures</h2>
         </div>
-        <div className='image-panel large'>
+        <div className='image-flex large'>
           <img src='../../public/images/gallery/senior-pics5.jpg' alt='Senior Pics' />
           <img src='../../public/images/gallery/senior-pics7.jpg' alt='Senior Pics' />
           <img src='../../public/images/gallery/senior-pics8.jpg' alt='Senior Pics' />

@@ -1,0 +1,35 @@
+.nav
+  display: none
+.nav-visible
+  +mediaQuery($small)
+    padding-top: 80px
+  display: block
+  background: $maroon
+  width: 100vw
+  height: 100vh
+  position: relative
+  z-index: 1
+  ul
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    width: 50%
+    height: 100%
+    text-align: center
+    margin: 0 auto
+    padding: 75px 0
+    max-width: 50%
+    li
+      font-family: $mainFont
+      font-size: 30px
+      cursor: pointer
+      margin: 6%
+      a
+        border-radius: 50px
+        color: $white
+        display: block
+        padding: 10px 0
+      &:hover
+        opacity: 0.5
+      &:active
+        opacity: 0.5

@@ -1,0 +1,57 @@
+// logo-background & drop-btn
+.logo-background,
+.drop-btn
+  height: 60px
+  width: 60px
+  top: 0
+  +mediaQuery($small)
+    height: 100px
+    width: 100px
+    top: 30px
+// logo-background
+.logo-background
+  background: $white
+  position: absolute
+  z-index: 2
+  right: 60px
+  cursor: pointer
+  &:hover
+    opacity: 0.8
+  +mediaQuery($small)
+    right: 130px
+  .logo
+    margin: 12px 0 0 0
+    height: 35px
+    +mediaQuery($small)
+      margin: 20px 0 0 0
+      height: 60px
+// drop-btn
+.drop-btn
+  background: $maroon
+  cursor: pointer
+  position: absolute
+  z-index: 2
+  right: 0
+  +mediaQuery($small)
+    right: 30px
+  .bar1,
+  .bar2,
+  .bar3
+    transition: 0.2s ease-out
+    width: 35px
+    height: 3px
+    margin: 6px auto
+    background: $white
+    border-radius: 100px
+  .bar1
+    margin-top: 20px
+    +mediaQuery($small)
+      margin-top: 38px
+.drop-btn-transform
+  @extend .drop-btn
+  .bar1
+    transform: rotate(45deg) translate(7px, 7px)
+  .bar2
+    opacity: 0
+  .bar3
+    transform: rotate(-45deg) translate(6px, -6px)

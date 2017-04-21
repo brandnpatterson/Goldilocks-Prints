@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf public/bundle.js & rimraf public/index.css",
     "deploy": "webpack -p && surge",
-    "dev": "webpack-dev-server --content-base ./ --inline",
+    "dev": "webpack-dev-server",
     "start": "npm run clean && npm run dev"
   },
   "dependencies": {
