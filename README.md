@@ -11,13 +11,13 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Got background for mobile working perfectly <br />
 √ Find solid image for landing <br />
 √ Add back postCSS <br />
-√ Set fade-in transition for drop-btn to be faster than rest of content
-√ Set Drop-btn to be fixed and to the side
-√ Completed gallery active class
+√ Set fade-in transition for drop-btn to be faster than rest of content <br />
+√ Set Drop-btn to be fixed and to the side <br />
+√ Completed gallery active class <br />
+√ Added Bottom section with fixed image <br />
 
 # Current
-
-# Todo
 - Fill Home Page
+# Todo
 - Fill About Page
 - Fill Contact
