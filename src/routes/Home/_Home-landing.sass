@@ -1,0 +1,29 @@
+.home-landing
+  +background('../public/images/landing.jpg')
+  opacity: 0
+  @keyframes fade-in-landing
+    0%
+      opacity: 0
+    100%
+      opacity: 1
+  animation: fade-in-landing 1s
+  animation-delay: 0.5s
+  animation-fill-mode: forwards
+  backface-visibility: hidden
+  perspective: 1000
+  h2
+    color: $white
+    font-family: $mainFont
+    letter-spacing: 5px
+    position: absolute
+    padding: 0
+    margin: 0
+    top: 20px
+    left: 3px
+    font-size: 23px
+    +mediaQuery($small)
+      top: 50px
+      left: 30px
+      font-size: 50px
+    +mediaQuery($medium)
+      font-size: 80px

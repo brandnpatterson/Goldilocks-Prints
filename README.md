@@ -15,9 +15,11 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Set Drop-btn to be fixed and to the side <br />
 √ Completed gallery active class <br />
 √ Added Bottom section with fixed image <br />
-
+√ Fill Home Page <br />
 # Current
-- Fill Home Page
+
 # Todo
+- Add Social Media Icons with animations
+- Add animations to images onScrolll
 - Fill About Page
 - Fill Contact

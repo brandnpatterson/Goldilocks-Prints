@@ -6,7 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 // routes
-import Home from './routes/Home'
+import Home from './routes/Home/Home'
 import About from './routes/About'
 import Contact from './routes/Contact'
 import Art from './routes/Gallery/Art'

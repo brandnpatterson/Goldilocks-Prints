@@ -1,0 +1,78 @@
+.home-content
+  @keyframes fade-in-content
+    0%
+      opacity: 0.5
+    100%
+      opacity: 1
+  animation: fade-in-content 1s
+  a
+    color: $black
+  width: 100vw
+  padding-top: 80%
+  +mediaQuery($small)
+    padding-top: 100vh
+  li
+  .home-button
+    width: 145px
+    padding: 5px
+    &:hover
+      opacity: 0.5
+  .flex-center
+    flex-direction: column
+  .panel-white,
+  .panel-gray,
+  .panel-black,
+  .panel-maroon,
+    height: 400px
+    h2
+      font-weight: 200
+      max-width: 80%
+  .panel-gray
+    height: auto
+    min-height: 100%
+    h2
+      padding: 80px 0
+      font-size: 20px
+      max-width: 80%
+      +mediaQuery($small)
+        font-size: 25px
+      color: $gray
+      text-align: center
+      line-height: 35px
+  .panel-white
+    height: auto
+    min-height: 100%
+    .flex-center
+      max-width: 80%
+      margin: 50px auto -10px
+      +mediaQuery($small)
+        max-width: 90%
+      h2
+        text-align: center
+        font-size: 25px
+        +mediaQuery($small)
+          font-size: 40px
+  .image-panel
+    display: block
+    overflow: visible
+    padding: 50px 0 50px
+    img
+      max-width: 40%
+      margin: 2%
+      &:hover
+        opacity: 0.9
+  .home-contact
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/about-me.jpg') no-repeat center top fixed
+    background-size: cover
+    background-position: 60% 0%
+    position: relative
+    height: 69vh
+    width: 100vw
+    +mediaQuery($small)
+      background-size: cover
+      background-position: 80% 0%
+    .home-button
+      border-color: $white
+      color: $white
+      margin-top: 250px
+      width: 130px
