@@ -1,65 +1,32 @@
-const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const webpack = require('webpack')
+var path = require('path');
 
 module.exports = {
-  devtool: 'cheap-module-source-map',
+  devtool: 'inline-sourcemap',
   devServer: {
-    historyApiFallback: true,
-    port: 8888
+    port: 8888,
+    stats: 'errors only'
   },
-  entry: './src/index.js',
+  context: path.join(__dirname, './src'),
+  entry: [
+    './index.js',
+  ],
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, './public/js'),
     filename: 'bundle.js',
-    publicPath: '/public/'
-  },
-  resolve: {
-    extensions: ['.js', '.jsx', '.json']
   },
   module: {
-    rules: [
-      {
-        test: /\.js$/,
-        enforce: 'pre',
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      },
+    loaders: [
       {
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'latest', 'stage-0']
+          presets: ['latest']
         }
-      },
-      {
-        test: /\.s?css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [ 'css-loader', 'postcss-loader', 'sass-loader' ]
-        })
-      },
-      {
-        test: /\.(otf|eot|svg|ttf|woff|jpe?g|png|gif|svg)$/i,
-        loader: 'url-loader'
-      },
-      {
-         test: /\.html$/,
-         loader: 'raw-loader'
       }
     ]
   },
-  plugins: [
-    new ExtractTextPlugin({
-      filename: 'index.css',
-      allChunks: true
-    }),
-    new webpack.HotModuleReplacementPlugin()
-  ],
-  stats: {
-    colors: true,
-    reasons: true,
-    chunks: true
+  node: {
+    fs: 'empty'
   }
-}
+};

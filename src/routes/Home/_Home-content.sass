@@ -57,6 +57,8 @@
     display: block
     overflow: visible
     padding: 50px 0 50px
+    mediaQuery($small)
+      margin: 0
     img
       max-width: 40%
       margin: 2%
@@ -64,16 +66,20 @@
         opacity: 0.9
   .home-contact
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../public/images/about-me.jpg') no-repeat center top fixed
-    background-size: cover
-    background-position: 60% 0%
+    background-size: contain
+    background-position: 0% 93%
+    background-color: $maroon
     position: relative
-    height: 69vh
     width: 100vw
+    height: 170px
     +mediaQuery($small)
       background-size: cover
       background-position: 80% 0%
+      height: 100vh
     .home-button
       border-color: $white
       color: $white
-      margin-top: 250px
+      margin-top: 85px
+      +mediaQuery($small)
+        margin-top: 250px
       width: 130px
