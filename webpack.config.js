@@ -17,12 +17,20 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.js$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
           presets: ['latest']
         }
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader'
       }
     ]
   },

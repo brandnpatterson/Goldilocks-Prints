@@ -6,7 +6,7 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
-    "deploy": "webpack -p && surge",
+    "deploy": "gulp & webpack -p && surge",
     "start": "gulp clean && gulp"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^3.1.0",
