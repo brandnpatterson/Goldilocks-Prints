@@ -6,7 +6,7 @@
   "author": "Brandon Patterson",
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf public/bundle.js & rimraf public/index.css & rimraf public/index.html",
+    "clean": "rimraf public/bundle.js public/index.css public/index.html public/*.js.map",
     "prod": "npm run clean && npm run prod-css && NODE_ENV=production webpack -p && surge public",
     "prod-css": "node-sass src/ -o public/",
     "start": "npm run clean && NODE_ENV=development webpack-dev-server --content-base ./public"
