@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf public/bundle.js & rimraf public/index.css & rimraf public/index.html",
-    "build": "npm run clean && npm run prod-css && NODE_ENV=production webpack -p && surge public",
+    "prod": "npm run clean && npm run prod-css && NODE_ENV=production webpack -p && surge public",
     "prod-css": "node-sass src/ -o public/",
     "start": "npm run clean && NODE_ENV=development webpack-dev-server --content-base ./public"
   },
