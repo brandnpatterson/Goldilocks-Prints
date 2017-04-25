@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-const logo = 'public/images/goldilocksbear.gif'
+const logo = 'assets/images/goldilocksbear.gif'
 
 const styles = {
   transition: 'all 0.2s ease-in'

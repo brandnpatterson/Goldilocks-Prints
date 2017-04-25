@@ -1,6 +1,6 @@
 # Goldilocks Prints
 Single Page Application built with React <br />
-It can be found live here: https://goldilox-prints.surge.sh
+It can be found live here: https://goldilox.surge.sh
 
 # Done
 √  Navbar animation <br />
@@ -16,6 +16,7 @@ It can be found live here: https://goldilox-prints.surge.sh
 √ Completed gallery active class <br />
 √ Added Bottom section with fixed image <br />
 √ Fill Home Page <br />
+√ Webpack dev and prod env set up 💯  and it's beautiful <br />
 # Current
 
 # Todo

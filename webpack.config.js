@@ -1,40 +1,77 @@
-var path = require('path');
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+const isProduction = process.env.NODE_ENV === 'production'
+const processCss = isProduction ? '?minimize!postcss-loader' : ''
+const entryEnv = isProduction ? './src/index.js' : [ './src/index.js', './src/index.scss' ]
 
 module.exports = {
-  devtool: 'inline-sourcemap',
+  devtool: 'cheap-module-source-map',
   devServer: {
-    port: 8888,
-    stats: 'errors only'
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    port: 8888
   },
-  context: path.join(__dirname, './src'),
-  entry: [
-    './index.js',
-  ],
+  entry: entryEnv,
   output: {
-    path: path.resolve(__dirname, './public/js'),
-    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
+    filename: 'bundle.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
+        enforce: 'pre',
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jsx?$/,
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         query: {
-          presets: ['latest']
+          presets: ['react', 'latest', 'stage-0']
         }
       },
       {
-        test: /\.json$/,
-        loader: 'json-loader'
+        test: /\.(css|scss|sass)$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: `css-loader${processCss}!sass-loader`
+        }),
+        include: path.join(__dirname, 'src')
       },
       {
-        test: /\.hbs$/,
-        loader: 'handlebars-loader'
+        test: /\.(otf|eot|svg|ttf|woff|jpe?g|png|gif|svg)$/i,
+        loader: 'url-loader'
+      },
+      {
+         test: /\.html$/,
+         loader: 'raw-loader'
       }
     ]
   },
-  node: {
-    fs: 'empty'
-  }
-};
+  stats: {
+    colors: true,
+    reasons: true,
+    chunks: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'index.html'),
+      inject: 'body'
+    }),
+    new ExtractTextPlugin({
+      filename: 'index.css',
+      allChunks: true,
+      disable: !isProduction
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
+}
