@@ -1,6 +1,5 @@
 import React from 'react'
 import Gallery from '../components/Gallery/Gallery'
-import Footer from '../components/Footer/Footer'
 
 const Photography = () => {
   return (
@@ -48,7 +47,6 @@ const Photography = () => {
           <img src='assets/images/gallery/senior-pics4.jpg' alt='Senior Pics' />
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
