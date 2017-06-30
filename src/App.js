@@ -8,7 +8,6 @@ import Footer from './components/Footer/Footer'
 // routes
 import Home from './routes/Home/Home'
 import About from './routes/About'
-import Contact from './routes/Contact'
 import Art from './routes/Art'
 import Photography from './routes/Photography'
 import Design from './routes/Design'
@@ -24,7 +23,6 @@ const App = () => {
           <Route path='/art' component={Art} />
           <Route path='/photography' component={Photography} />
           <Route path='/design' component={Design} />
-          <Route path='/contact' component={Contact} />
           <Footer />
         </div>
       </Router>

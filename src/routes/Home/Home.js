@@ -34,7 +34,7 @@ const Home = () => {
           </div>
           <div className='home-contact'>
             <div className='flex-center'>
-              <Link to='/contact'><div className='button home-button'>Contact Me</div></Link>
+              <a href='mailto:wbrchair13@hotmail.com?Subject=Hey%20Lauren!'><div className='button home-button'>Contact Me</div></a>
             </div>
           </div>
         </div>
